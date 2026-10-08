@@ -1,0 +1,97 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "loss": 1.5686225502990012,
+      "dice": 0.002125791091266153,
+      "precision": 0.00047286369209719256,
+      "recall": 0.022148557267216748,
+      "predicted_fraction": 0.023255281670148984,
+      "target_fraction": 0.014646929363871729
+    },
+    "validation": {
+      "loss": 1.4927823167098195,
+      "dice": 0.0010611752636338536,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.016535307231702302
+    }
+  },
+  {
+    "epoch": 2,
+    "train": {
+      "loss": 1.419479112292445,
+      "dice": 0.0012850558417740949,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.014646929363871729
+    },
+    "validation": {
+      "loss": 1.3874010600541766,
+      "dice": 0.0010611752636338536,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.016535307231702302
+    }
+  },
+  {
+    "epoch": 3,
+    "train": {
+      "loss": 1.331942918688752,
+      "dice": 0.0012850558322984292,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.014646929363871729
+    },
+    "validation": {
+      "loss": 1.2989770424993414,
+      "dice": 0.0010611752636338536,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.016535307231702302
+    }
+  },
+  {
+    "epoch": 4,
+    "train": {
+      "loss": 1.238966556482537,
+      "dice": 0.001285055826883763,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.014646929363871729
+    },
+    "validation": {
+      "loss": 1.207079711713289,
+      "dice": 0.0010611752636338536,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.016535307231702302
+    }
+  },
+  {
+    "epoch": 5,
+    "train": {
+      "loss": 1.1500080324882684,
+      "dice": 0.0012850558309447627,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.014646929363871729
+    },
+    "validation": {
+      "loss": 1.1288370772411949,
+      "dice": 0.0010611752636338536,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.016535307231702302
+    }
+  }
+]

@@ -1,0 +1,3858 @@
+[
+  {
+    "epoch": 1,
+    "stage": "warmup",
+    "selection_score": 0.3001968971284059,
+    "train": {
+      "loss": 2.1899333388306372,
+      "binary_loss": 0.3933792973673621,
+      "binary_bce_loss": 0.12386789727349613,
+      "binary_dice_loss": 0.2695113961086717,
+      "level_loss": 1.796554030374039,
+      "binary": {
+        "precision": 0.8263192560002107,
+        "recall": 0.949849487895435,
+        "dice": 0.8837886882622124,
+        "iou": 0.7917754272587282,
+        "pixel_accuracy": 0.9963412617528161
+      },
+      "level": {
+        "accuracy": 0.18120809434110827,
+        "macro_f1": 0.05806804269253751,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.10929951690821256,
+            "recall": 0.025088943307304903,
+            "f1": 0.040810191274285076
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18343897336622225,
+            "recall": 0.9518486115161531,
+            "f1": 0.30759806488093994
+          }
+        ],
+        "confusion_matrix": [
+          [
+            543,
+            0,
+            0,
+            0,
+            0,
+            21100
+          ],
+          [
+            715,
+            0,
+            0,
+            0,
+            0,
+            24549
+          ],
+          [
+            615,
+            0,
+            0,
+            0,
+            0,
+            27684
+          ],
+          [
+            785,
+            0,
+            0,
+            0,
+            0,
+            29291
+          ],
+          [
+            824,
+            0,
+            0,
+            0,
+            0,
+            28136
+          ],
+          [
+            1486,
+            0,
+            0,
+            0,
+            0,
+            29375
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.3136832463113883,
+      "binary_loss": 0.5130094038812738,
+      "binary_bce_loss": 0.22651503744878268,
+      "binary_dice_loss": 0.2864943680010344,
+      "level_loss": 1.8006738738009804,
+      "binary": {
+        "precision": 0.8207856341189674,
+        "recall": 0.8879768814201413,
+        "dice": 0.8530602246614332,
+        "iou": 0.7437707218843439,
+        "pixel_accuracy": 0.9949417114257812
+      },
+      "level": {
+        "accuracy": 0.17997037324850046,
+        "macro_f1": 0.06325547104282282,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.09093619558735838,
+            "recall": 0.057244744744744745,
+            "f1": 0.07026030868463487
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.18786516853932583,
+            "recall": 0.874261811023622,
+            "f1": 0.3092725175723021
+          }
+        ],
+        "confusion_matrix": [
+          [
+            305,
+            0,
+            0,
+            0,
+            0,
+            5023
+          ],
+          [
+            463,
+            0,
+            0,
+            0,
+            0,
+            6015
+          ],
+          [
+            441,
+            0,
+            0,
+            0,
+            0,
+            6775
+          ],
+          [
+            586,
+            0,
+            0,
+            0,
+            0,
+            6605
+          ],
+          [
+            537,
+            0,
+            0,
+            0,
+            0,
+            6301
+          ],
+          [
+            1022,
+            0,
+            0,
+            0,
+            0,
+            7106
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 2,
+    "stage": "warmup",
+    "selection_score": 0.2997930365082633,
+    "train": {
+      "loss": 2.18827839784844,
+      "binary_loss": 0.3933792925158212,
+      "binary_bce_loss": 0.12386789727349613,
+      "binary_dice_loss": 0.2695113933363626,
+      "level_loss": 1.794899111570314,
+      "binary": {
+        "precision": 0.8263192560002107,
+        "recall": 0.949849487895435,
+        "dice": 0.8837886882622124,
+        "iou": 0.7917754272587282,
+        "pixel_accuracy": 0.9963412617528161
+      },
+      "level": {
+        "accuracy": 0.1820439362095177,
+        "macro_f1": 0.05690708808088482,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.10583480676938621,
+            "recall": 0.019359608187404703,
+            "f1": 0.03273181782673229
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18391624882093036,
+            "recall": 0.9603382910469525,
+            "f1": 0.30871071065857664
+          }
+        ],
+        "confusion_matrix": [
+          [
+            419,
+            0,
+            0,
+            0,
+            0,
+            21224
+          ],
+          [
+            563,
+            0,
+            0,
+            0,
+            0,
+            24701
+          ],
+          [
+            479,
+            0,
+            0,
+            0,
+            0,
+            27820
+          ],
+          [
+            626,
+            0,
+            0,
+            0,
+            0,
+            29450
+          ],
+          [
+            648,
+            0,
+            0,
+            0,
+            0,
+            28312
+          ],
+          [
+            1224,
+            0,
+            0,
+            0,
+            0,
+            29637
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.3103514219585217,
+      "binary_loss": 0.5130094038812738,
+      "binary_bce_loss": 0.22651503744878268,
+      "binary_dice_loss": 0.2864943680010344,
+      "level_loss": 1.7973419929805554,
+      "binary": {
+        "precision": 0.8207856341189674,
+        "recall": 0.8879768814201413,
+        "dice": 0.8530602246614332,
+        "iou": 0.7437707218843439,
+        "pixel_accuracy": 0.9949417114257812
+      },
+      "level": {
+        "accuracy": 0.18184025838412785,
+        "macro_f1": 0.06267852729976194,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.09118852459016394,
+            "recall": 0.050112612612612614,
+            "f1": 0.06468023255813954
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.18877937831690675,
+            "recall": 0.8884104330708661,
+            "f1": 0.31139093124043205
+          }
+        ],
+        "confusion_matrix": [
+          [
+            267,
+            0,
+            0,
+            0,
+            0,
+            5061
+          ],
+          [
+            400,
+            0,
+            0,
+            0,
+            0,
+            6078
+          ],
+          [
+            370,
+            0,
+            0,
+            0,
+            0,
+            6846
+          ],
+          [
+            505,
+            0,
+            0,
+            0,
+            0,
+            6686
+          ],
+          [
+            479,
+            0,
+            0,
+            0,
+            0,
+            6359
+          ],
+          [
+            907,
+            0,
+            0,
+            0,
+            0,
+            7221
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 3,
+    "stage": "warmup",
+    "selection_score": 0.2989155970865332,
+    "train": {
+      "loss": 2.1866613155187564,
+      "binary_loss": 0.3933792911296667,
+      "binary_bce_loss": 0.12386789658041887,
+      "binary_dice_loss": 0.2695113961086717,
+      "level_loss": 1.7932820236960123,
+      "binary": {
+        "precision": 0.8263192560002107,
+        "recall": 0.949849487895435,
+        "dice": 0.8837886882622124,
+        "iou": 0.7917754272587282,
+        "pixel_accuracy": 0.9963412617528161
+      },
+      "level": {
+        "accuracy": 0.18308571013246278,
+        "macro_f1": 0.05571661991243316,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.10492957746478873,
+            "recall": 0.013768886013953704,
+            "f1": 0.024343421966262303
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18445363391531033,
+            "recall": 0.9698324746443732,
+            "f1": 0.30995629750833664
+          }
+        ],
+        "confusion_matrix": [
+          [
+            298,
+            0,
+            0,
+            0,
+            0,
+            21345
+          ],
+          [
+            414,
+            0,
+            0,
+            0,
+            0,
+            24850
+          ],
+          [
+            307,
+            0,
+            0,
+            0,
+            0,
+            27992
+          ],
+          [
+            444,
+            0,
+            0,
+            0,
+            0,
+            29632
+          ],
+          [
+            446,
+            0,
+            0,
+            0,
+            0,
+            28514
+          ],
+          [
+            931,
+            0,
+            0,
+            0,
+            0,
+            29930
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.30751717718024,
+      "binary_loss": 0.5130094038812738,
+      "binary_bce_loss": 0.22651503744878268,
+      "binary_dice_loss": 0.2864943680010344,
+      "level_loss": 1.7945077482022738,
+      "binary": {
+        "precision": 0.8207856341189674,
+        "recall": 0.8879768814201413,
+        "dice": 0.8530602246614332,
+        "iou": 0.7437707218843439,
+        "pixel_accuracy": 0.9949417114257812
+      },
+      "level": {
+        "accuracy": 0.1836858592972146,
+        "macro_f1": 0.061425042411576126,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.0885286783042394,
+            "recall": 0.03997747747747748,
+            "f1": 0.05508145849495733
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.18959069455548966,
+            "recall": 0.9044045275590551,
+            "f1": 0.31346879597449945
+          }
+        ],
+        "confusion_matrix": [
+          [
+            213,
+            0,
+            0,
+            0,
+            0,
+            5115
+          ],
+          [
+            323,
+            0,
+            0,
+            0,
+            0,
+            6155
+          ],
+          [
+            306,
+            0,
+            0,
+            0,
+            0,
+            6910
+          ],
+          [
+            402,
+            0,
+            0,
+            0,
+            0,
+            6789
+          ],
+          [
+            385,
+            0,
+            0,
+            0,
+            0,
+            6453
+          ],
+          [
+            777,
+            0,
+            0,
+            0,
+            0,
+            7351
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 4,
+    "stage": "warmup",
+    "selection_score": 0.2981557747751371,
+    "train": {
+      "loss": 2.1852884957956715,
+      "binary_loss": 0.3933792994465939,
+      "binary_bce_loss": 0.1238678969269575,
+      "binary_dice_loss": 0.2695114016532898,
+      "level_loss": 1.791909187339073,
+      "binary": {
+        "precision": 0.8263192560002107,
+        "recall": 0.949849487895435,
+        "dice": 0.8837886882622124,
+        "iou": 0.7917754272587282,
+        "pixel_accuracy": 0.9963412617528161
+      },
+      "level": {
+        "accuracy": 0.18391549517573877,
+        "macro_f1": 0.05425958937854398,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.09294696555494805,
+            "recall": 0.00785473363212124,
+            "f1": 0.014485344239945465
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18493452723642467,
+            "recall": 0.9784193642461358,
+            "f1": 0.3110721920313184
+          }
+        ],
+        "confusion_matrix": [
+          [
+            170,
+            0,
+            0,
+            0,
+            0,
+            21473
+          ],
+          [
+            288,
+            0,
+            0,
+            0,
+            0,
+            24976
+          ],
+          [
+            166,
+            0,
+            0,
+            0,
+            0,
+            28133
+          ],
+          [
+            272,
+            0,
+            0,
+            0,
+            0,
+            29804
+          ],
+          [
+            267,
+            0,
+            0,
+            0,
+            0,
+            28693
+          ],
+          [
+            666,
+            0,
+            0,
+            0,
+            0,
+            30195
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.305223176353856,
+      "binary_loss": 0.5130094038812738,
+      "binary_bce_loss": 0.22651503744878268,
+      "binary_dice_loss": 0.2864943680010344,
+      "level_loss": 1.7922137787467556,
+      "binary": {
+        "precision": 0.8207856341189674,
+        "recall": 0.8879768814201413,
+        "dice": 0.8530602246614332,
+        "iou": 0.7437707218843439,
+        "pixel_accuracy": 0.9949417114257812
+      },
+      "level": {
+        "accuracy": 0.1864056922217635,
+        "macro_f1": 0.06033958196672457,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.09080779944289694,
+            "recall": 0.030593093093093094,
+            "f1": 0.04576723290748281
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.1907724341069524,
+            "recall": 0.9243356299212598,
+            "f1": 0.31627025889286464
+          }
+        ],
+        "confusion_matrix": [
+          [
+            163,
+            0,
+            0,
+            0,
+            0,
+            5165
+          ],
+          [
+            236,
+            0,
+            0,
+            0,
+            0,
+            6242
+          ],
+          [
+            221,
+            0,
+            0,
+            0,
+            0,
+            6995
+          ],
+          [
+            286,
+            0,
+            0,
+            0,
+            0,
+            6905
+          ],
+          [
+            275,
+            0,
+            0,
+            1,
+            0,
+            6562
+          ],
+          [
+            614,
+            0,
+            0,
+            1,
+            0,
+            7513
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 5,
+    "stage": "warmup",
+    "selection_score": 0.29713482081622306,
+    "train": {
+      "loss": 2.1846672157908595,
+      "binary_loss": 0.3933792890504349,
+      "binary_bce_loss": 0.12386789640714956,
+      "binary_dice_loss": 0.26951139195020807,
+      "level_loss": 1.7912879267404245,
+      "binary": {
+        "precision": 0.8263192560002107,
+        "recall": 0.949849487895435,
+        "dice": 0.8837886882622124,
+        "iou": 0.7917754272587282,
+        "pixel_accuracy": 0.9963412617528161
+      },
+      "level": {
+        "accuracy": 0.18533279225695476,
+        "macro_f1": 0.053286970251498554,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.08974358974358974,
+            "recall": 0.003557732292196091,
+            "f1": 0.006844140260432869
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.1858332724483086,
+            "recall": 0.9890152619811412,
+            "f1": 0.3128776812485584
+          }
+        ],
+        "confusion_matrix": [
+          [
+            77,
+            0,
+            0,
+            0,
+            0,
+            21566
+          ],
+          [
+            157,
+            0,
+            0,
+            0,
+            0,
+            25107
+          ],
+          [
+            67,
+            0,
+            0,
+            0,
+            0,
+            28232
+          ],
+          [
+            118,
+            0,
+            0,
+            0,
+            0,
+            29958
+          ],
+          [
+            101,
+            0,
+            0,
+            0,
+            0,
+            28859
+          ],
+          [
+            338,
+            0,
+            0,
+            1,
+            0,
+            30522
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.3030948638916016,
+      "binary_loss": 0.5130094038812738,
+      "binary_bce_loss": 0.22651503744878268,
+      "binary_dice_loss": 0.2864943680010344,
+      "level_loss": 1.7900854725586741,
+      "binary": {
+        "precision": 0.8207856341189674,
+        "recall": 0.8879768814201413,
+        "dice": 0.8530602246614332,
+        "iou": 0.7437707218843439,
+        "pixel_accuracy": 0.9949417114257812
+      },
+      "level": {
+        "accuracy": 0.19264673741470167,
+        "macro_f1": 0.058881076311133075,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.117797695262484,
+            "recall": 0.017267267267267267,
+            "f1": 0.030119495825830744
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19409376701816922,
+            "recall": 0.9646899606299213,
+            "f1": 0.32316696204096773
+          }
+        ],
+        "confusion_matrix": [
+          [
+            92,
+            0,
+            0,
+            0,
+            0,
+            5236
+          ],
+          [
+            95,
+            0,
+            0,
+            0,
+            0,
+            6383
+          ],
+          [
+            93,
+            0,
+            0,
+            0,
+            0,
+            7123
+          ],
+          [
+            107,
+            0,
+            0,
+            0,
+            0,
+            7084
+          ],
+          [
+            107,
+            0,
+            0,
+            0,
+            0,
+            6731
+          ],
+          [
+            287,
+            0,
+            0,
+            0,
+            0,
+            7841
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 6,
+    "stage": "finetuning",
+    "selection_score": 0.295855293046023,
+    "train": {
+      "loss": 2.180070871530577,
+      "binary_loss": 0.39025786588358324,
+      "binary_bce_loss": 0.11976877963820169,
+      "binary_dice_loss": 0.2704890869384588,
+      "level_loss": 1.789813011191612,
+      "binary": {
+        "precision": 0.8188459941884599,
+        "recall": 0.9558154606518355,
+        "dice": 0.8820450334383201,
+        "iou": 0.7889808264380171,
+        "pixel_accuracy": 0.9962556528490644
+      },
+      "level": {
+        "accuracy": 0.18679854393923792,
+        "macro_f1": 0.052593769567004955,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.08791208791208792,
+            "recall": 0.00036963452386452894,
+            "f1": 0.0007361737370019325
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18685307735195017,
+            "recall": 0.9990927060043421,
+            "f1": 0.3148264436650278
+          }
+        ],
+        "confusion_matrix": [
+          [
+            8,
+            0,
+            0,
+            0,
+            0,
+            21635
+          ],
+          [
+            21,
+            0,
+            0,
+            0,
+            0,
+            25243
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            28295
+          ],
+          [
+            21,
+            0,
+            0,
+            0,
+            0,
+            30055
+          ],
+          [
+            9,
+            0,
+            0,
+            0,
+            0,
+            28951
+          ],
+          [
+            28,
+            0,
+            0,
+            0,
+            0,
+            30833
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.2923428761331657,
+      "binary_loss": 0.5037442006562886,
+      "binary_bce_loss": 0.22086724795793233,
+      "binary_dice_loss": 0.2828769558354428,
+      "level_loss": 1.78859870057357,
+      "binary": {
+        "precision": 0.8271805640226693,
+        "recall": 0.8896524927754438,
+        "dice": 0.8572799176299901,
+        "iou": 0.7502098990436795,
+        "pixel_accuracy": 0.9951019287109375
+      },
+      "level": {
+        "accuracy": 0.19684790791422813,
+        "macro_f1": 0.0552447396528943,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.1320754716981132,
+            "recall": 0.001313813813813814,
+            "f1": 0.0026017468871956883
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19693138160774207,
+            "recall": 0.9964320866141733,
+            "f1": 0.32886669103017013
+          }
+        ],
+        "confusion_matrix": [
+          [
+            7,
+            0,
+            0,
+            0,
+            0,
+            5321
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            0,
+            6473
+          ],
+          [
+            7,
+            0,
+            0,
+            0,
+            0,
+            7209
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            7190
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            6834
+          ],
+          [
+            29,
+            0,
+            0,
+            0,
+            0,
+            8099
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 7,
+    "stage": "finetuning",
+    "selection_score": 0.29527251724462117,
+    "train": {
+      "loss": 2.174461048702861,
+      "binary_loss": 0.3860014476055323,
+      "binary_bce_loss": 0.11997123027956763,
+      "binary_dice_loss": 0.26603021732596466,
+      "level_loss": 1.7884595893150153,
+      "binary": {
+        "precision": 0.8273792962249392,
+        "recall": 0.954585925149755,
+        "dice": 0.8864422509069434,
+        "iou": 0.79604515493598,
+        "pixel_accuracy": 0.9964177331259084
+      },
+      "level": {
+        "accuracy": 0.18691968044190596,
+        "macro_f1": 0.05249487145466978,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18692194474897184,
+            "recall": 1.0,
+            "f1": 0.3149692287280187
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21643
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            25264
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28299
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            30074
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28960
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30861
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.2861376185166207,
+      "binary_loss": 0.49911381382691233,
+      "binary_bce_loss": 0.21526659083993813,
+      "binary_dice_loss": 0.2838472253397891,
+      "level_loss": 1.7870238266493146,
+      "binary": {
+        "precision": 0.8195206468380017,
+        "recall": 0.8959421064134632,
+        "dice": 0.8560291422074758,
+        "iou": 0.7482962842771378,
+        "pixel_accuracy": 0.995016800729852
+      },
+      "level": {
+        "accuracy": 0.19738216081012167,
+        "macro_f1": 0.054948249403397764,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19738216081012167,
+            "recall": 1.0,
+            "f1": 0.3296894964203866
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5328
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6478
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7216
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7191
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6838
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            8128
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 8,
+    "stage": "finetuning",
+    "selection_score": 0.2951909551564926,
+    "train": {
+      "loss": 2.171798722688542,
+      "binary_loss": 0.3838535720525786,
+      "binary_bce_loss": 0.1185785622097725,
+      "binary_dice_loss": 0.2652750098428061,
+      "level_loss": 1.7879451430121134,
+      "binary": {
+        "precision": 0.8261583688158431,
+        "recall": 0.9566149615694445,
+        "dice": 0.8866135057834214,
+        "iou": 0.7963214125453143,
+        "pixel_accuracy": 0.9964162249897801
+      },
+      "level": {
+        "accuracy": 0.18691968044190596,
+        "macro_f1": 0.052494335694311195,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18691968044190596,
+            "recall": 1.0,
+            "f1": 0.31496601416586717
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21643
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            25264
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28299
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30076
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28960
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30861
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.2780974036768864,
+      "binary_loss": 0.4922489147437246,
+      "binary_bce_loss": 0.20791660249233246,
+      "binary_dice_loss": 0.2843323130356638,
+      "level_loss": 1.7858484983444214,
+      "binary": {
+        "precision": 0.8139942585409682,
+        "recall": 0.9020374462711577,
+        "dice": 0.8557572685803806,
+        "iou": 0.7478808867054584,
+        "pixel_accuracy": 0.9949718274568257
+      },
+      "level": {
+        "accuracy": 0.19738216081012167,
+        "macro_f1": 0.054948249403397764,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19738216081012167,
+            "recall": 1.0,
+            "f1": 0.3296894964203866
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5328
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6478
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7216
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7191
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6838
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            8128
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 9,
+    "stage": "finetuning",
+    "selection_score": 0.2955709228123901,
+    "train": {
+      "loss": 2.169538464657096,
+      "binary_loss": 0.3821513077547384,
+      "binary_bce_loss": 0.11809385879788288,
+      "binary_dice_loss": 0.2640574477439703,
+      "level_loss": 1.7873871575954348,
+      "binary": {
+        "precision": 0.8267947691486522,
+        "recall": 0.9569662574271818,
+        "dice": 0.8871308253790006,
+        "iou": 0.7971564363629025,
+        "pixel_accuracy": 0.9964333467705305
+      },
+      "level": {
+        "accuracy": 0.18691968044190596,
+        "macro_f1": 0.052494335694311195,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18691968044190596,
+            "recall": 1.0,
+            "f1": 0.31496601416586717
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21643
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            25264
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28299
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30076
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28960
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30861
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.279822725998728,
+      "binary_loss": 0.4947897540895562,
+      "binary_bce_loss": 0.2121192271772184,
+      "binary_dice_loss": 0.2826705292651528,
+      "level_loss": 1.7850330001429509,
+      "binary": {
+        "precision": 0.8186098952115666,
+        "recall": 0.8992204764564462,
+        "dice": 0.8570238274333722,
+        "iou": 0.7498177547383768,
+        "pixel_accuracy": 0.9950388858192846
+      },
+      "level": {
+        "accuracy": 0.19738216081012167,
+        "macro_f1": 0.054948249403397764,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19738216081012167,
+            "recall": 1.0,
+            "f1": 0.3296894964203866
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5328
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6478
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7216
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7191
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6838
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            8128
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 10,
+    "stage": "finetuning",
+    "selection_score": 0.2957078034659185,
+    "train": {
+      "loss": 2.166815846465355,
+      "binary_loss": 0.3802299693573353,
+      "binary_bce_loss": 0.11786971570447434,
+      "binary_dice_loss": 0.2623602539993996,
+      "level_loss": 1.7865858909695647,
+      "binary": {
+        "precision": 0.8296047001254837,
+        "recall": 0.9570328825036493,
+        "dice": 0.8887745172485558,
+        "iou": 0.799814737012609,
+        "pixel_accuracy": 0.9964915430823038
+      },
+      "level": {
+        "accuracy": 0.18691968044190596,
+        "macro_f1": 0.052494335694311195,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18691968044190596,
+            "recall": 1.0,
+            "f1": 0.31496601416586717
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21643
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            25264
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28299
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30076
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28960
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30861
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.277543544769287,
+      "binary_loss": 0.49302083410714803,
+      "binary_bce_loss": 0.21206266942777133,
+      "binary_dice_loss": 0.28095815997374685,
+      "level_loss": 1.7845227090935958,
+      "binary": {
+        "precision": 0.8190198289011208,
+        "recall": 0.8997304451297992,
+        "dice": 0.857480096278467,
+        "iou": 0.7505165498521249,
+        "pixel_accuracy": 0.9950545461554277
+      },
+      "level": {
+        "accuracy": 0.19738216081012167,
+        "macro_f1": 0.054948249403397764,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19738216081012167,
+            "recall": 1.0,
+            "f1": 0.3296894964203866
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5328
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6478
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7216
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7191
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6838
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            8128
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 11,
+    "stage": "finetuning",
+    "selection_score": 0.2965521393068987,
+    "train": {
+      "loss": 2.1653013950170474,
+      "binary_loss": 0.3787035484646642,
+      "binary_bce_loss": 0.11642503565134005,
+      "binary_dice_loss": 0.2622785124667855,
+      "level_loss": 1.786597867344701,
+      "binary": {
+        "precision": 0.8262640486062218,
+        "recall": 0.9595949195350781,
+        "dice": 0.8879522934134422,
+        "iou": 0.7984839932263527,
+        "pixel_accuracy": 0.9964528638263082
+      },
+      "level": {
+        "accuracy": 0.18691968044190596,
+        "macro_f1": 0.052494335694311195,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18691968044190596,
+            "recall": 1.0,
+            "f1": 0.31496601416586717
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21643
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            25264
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28299
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30076
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28960
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30861
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.2859673751027962,
+      "binary_loss": 0.5020494398317839,
+      "binary_bce_loss": 0.22379286508811147,
+      "binary_dice_loss": 0.27825657317512914,
+      "level_loss": 1.783917979190224,
+      "binary": {
+        "precision": 0.8323871377963484,
+        "recall": 0.8901381772262561,
+        "dice": 0.8602945490817344,
+        "iou": 0.754839373970346,
+        "pixel_accuracy": 0.9952195820055509
+      },
+      "level": {
+        "accuracy": 0.19738216081012167,
+        "macro_f1": 0.054948249403397764,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19738216081012167,
+            "recall": 1.0,
+            "f1": 0.3296894964203866
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5328
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6478
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7216
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7191
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6838
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            8128
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 12,
+    "stage": "finetuning",
+    "selection_score": 0.29603474517198025,
+    "train": {
+      "loss": 2.1636083846868472,
+      "binary_loss": 0.3776829623898795,
+      "binary_bce_loss": 0.11756781696580178,
+      "binary_dice_loss": 0.26011514525080837,
+      "level_loss": 1.7859254243761995,
+      "binary": {
+        "precision": 0.8310659385751712,
+        "recall": 0.9568208936239802,
+        "dice": 0.8895207903397909,
+        "iou": 0.8010242628603301,
+        "pixel_accuracy": 0.9965187782465026
+      },
+      "level": {
+        "accuracy": 0.18691968044190596,
+        "macro_f1": 0.052494335694311195,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18691968044190596,
+            "recall": 1.0,
+            "f1": 0.31496601416586717
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21643
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            25264
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28299
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30076
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28960
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30861
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.279571269687853,
+      "binary_loss": 0.49621995656113876,
+      "binary_bce_loss": 0.21625634243613795,
+      "binary_dice_loss": 0.2799636125564575,
+      "level_loss": 1.7833513335177773,
+      "binary": {
+        "precision": 0.8228797898158662,
+        "recall": 0.8974962966560626,
+        "dice": 0.8585699019653394,
+        "iou": 0.752187894329792,
+        "pixel_accuracy": 0.9951107627467105
+      },
+      "level": {
+        "accuracy": 0.19738216081012167,
+        "macro_f1": 0.054948249403397764,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19738216081012167,
+            "recall": 1.0,
+            "f1": 0.3296894964203866
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5328
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6478
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7216
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7191
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6838
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            8128
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 13,
+    "stage": "finetuning",
+    "selection_score": 0.2958445975143483,
+    "train": {
+      "loss": 2.1618237550868544,
+      "binary_loss": 0.37643193089684773,
+      "binary_bce_loss": 0.1167072580997334,
+      "binary_dice_loss": 0.25972467245057573,
+      "level_loss": 1.7853918408238612,
+      "binary": {
+        "precision": 0.8308392904977756,
+        "recall": 0.9580746564265943,
+        "dice": 0.8899322062505275,
+        "iou": 0.8016917626666802,
+        "pixel_accuracy": 0.996528802916061
+      },
+      "level": {
+        "accuracy": 0.18691968044190596,
+        "macro_f1": 0.052494335694311195,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18691968044190596,
+            "recall": 1.0,
+            "f1": 0.31496601416586717
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21643
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            25264
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28299
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30076
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28960
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30861
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.2760355723531625,
+      "binary_loss": 0.4930726415232608,
+      "binary_bce_loss": 0.21300705404658066,
+      "binary_dice_loss": 0.2800655866924085,
+      "level_loss": 1.782962955926594,
+      "binary": {
+        "precision": 0.8191879473358664,
+        "recall": 0.9005318244736394,
+        "dice": 0.8579360764398996,
+        "iou": 0.75121546065959,
+        "pixel_accuracy": 0.9950686003032484
+      },
+      "level": {
+        "accuracy": 0.19738216081012167,
+        "macro_f1": 0.054948249403397764,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19738216081012167,
+            "recall": 1.0,
+            "f1": 0.3296894964203866
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5328
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6478
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7216
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7191
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6838
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            8128
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 14,
+    "stage": "finetuning",
+    "selection_score": 0.2959547493116203,
+    "train": {
+      "loss": 2.1599183082580566,
+      "binary_loss": 0.3745252545489821,
+      "binary_bce_loss": 0.11609586466883504,
+      "binary_dice_loss": 0.25842939143957094,
+      "level_loss": 1.7853930412336838,
+      "binary": {
+        "precision": 0.8318670114362596,
+        "recall": 0.9586803389399344,
+        "dice": 0.8907829757298629,
+        "iou": 0.8030736602839255,
+        "pixel_accuracy": 0.996556747791379
+      },
+      "level": {
+        "accuracy": 0.18691968044190596,
+        "macro_f1": 0.052494335694311195,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18691968044190596,
+            "recall": 1.0,
+            "f1": 0.31496601416586717
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21643
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            25264
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28299
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30076
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28960
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30861
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.276646463494552,
+      "binary_loss": 0.4941018537471169,
+      "binary_bce_loss": 0.21469138797960782,
+      "binary_dice_loss": 0.27941046890459564,
+      "level_loss": 1.7825446442553872,
+      "binary": {
+        "precision": 0.8197369875124323,
+        "recall": 0.9006775298088832,
+        "dice": 0.8583032490974729,
+        "iou": 0.7517786561264822,
+        "pixel_accuracy": 0.995082654451069
+      },
+      "level": {
+        "accuracy": 0.19738216081012167,
+        "macro_f1": 0.054948249403397764,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19738216081012167,
+            "recall": 1.0,
+            "f1": 0.3296894964203866
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5328
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6478
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7216
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7191
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6838
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            8128
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 15,
+    "stage": "finetuning",
+    "selection_score": 0.2956719808479731,
+    "train": {
+      "loss": 2.1581272857133733,
+      "binary_loss": 0.3732076155584912,
+      "binary_bce_loss": 0.11588169253149698,
+      "binary_dice_loss": 0.25732592372007146,
+      "level_loss": 1.7849196694618048,
+      "binary": {
+        "precision": 0.8332622803277911,
+        "recall": 0.9589104982950037,
+        "dice": 0.891681826630095,
+        "iou": 0.8045359609315845,
+        "pixel_accuracy": 0.9965877089389535
+      },
+      "level": {
+        "accuracy": 0.18691968044190596,
+        "macro_f1": 0.052494335694311195,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18691968044190596,
+            "recall": 1.0,
+            "f1": 0.31496601416586717
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21643
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            25264
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28299
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30076
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28960
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30861
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.275083328548231,
+      "binary_loss": 0.492536933798539,
+      "binary_bce_loss": 0.21309664453330793,
+      "binary_dice_loss": 0.2794402900495027,
+      "level_loss": 1.7825463822013454,
+      "binary": {
+        "precision": 0.8175989777258807,
+        "recall": 0.9011874984822361,
+        "dice": 0.8573606875519822,
+        "iou": 0.7503336164017954,
+        "pixel_accuracy": 0.9950416966488487
+      },
+      "level": {
+        "accuracy": 0.19738216081012167,
+        "macro_f1": 0.054948249403397764,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19738216081012167,
+            "recall": 1.0,
+            "f1": 0.3296894964203866
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5328
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6478
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7216
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7191
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6838
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            8128
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "epoch": 16,
+    "stage": "finetuning",
+    "selection_score": 0.29540630014192526,
+    "train": {
+      "loss": 2.157578701196715,
+      "binary_loss": 0.37274527480435926,
+      "binary_bce_loss": 0.11577347960583,
+      "binary_dice_loss": 0.25697179727776104,
+      "level_loss": 1.7848334367885146,
+      "binary": {
+        "precision": 0.8332657969382331,
+        "recall": 0.9590255779725384,
+        "dice": 0.8917335916468614,
+        "iou": 0.8046202473753215,
+        "pixel_accuracy": 0.9965891283611918
+      },
+      "level": {
+        "accuracy": 0.18691968044190596,
+        "macro_f1": 0.052494335694311195,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 21643,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 25264,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 28299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 30076,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 28960,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 30861,
+            "precision": 0.18691968044190596,
+            "recall": 1.0,
+            "f1": 0.31496601416586717
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21643
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            25264
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28299
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30076
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28960
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            30861
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "loss": 2.2718089505245813,
+      "binary_loss": 0.48970152202405426,
+      "binary_bce_loss": 0.20990860697470212,
+      "binary_dice_loss": 0.2797929142650805,
+      "level_loss": 1.782107441048873,
+      "binary": {
+        "precision": 0.8143047923462574,
+        "recall": 0.9032516573981884,
+        "dice": 0.8564750851984895,
+        "iou": 0.7489780713235739,
+        "pixel_accuracy": 0.9949943140933388
+      },
+      "level": {
+        "accuracy": 0.19738216081012167,
+        "macro_f1": 0.054948249403397764,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 5328,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 6478,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 7216,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 7191,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 6838,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 8128,
+            "precision": 0.19738216081012167,
+            "recall": 1.0,
+            "f1": 0.3296894964203866
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5328
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6478
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7216
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7191
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6838
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            8128
+          ]
+        ]
+      }
+    }
+  }
+]

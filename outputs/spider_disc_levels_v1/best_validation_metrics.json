@@ -1,0 +1,115 @@
+{
+  "epoch": 11,
+  "pixel_accuracy": 0.9880132461002965,
+  "macro_level_dice": 0.06666264041550912,
+  "macro_level_iou": 0.03999710113418125,
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "Background",
+      "support": 2449189,
+      "precision": 0.9961942991839402,
+      "recall": 0.9990927609098359,
+      "dice": 0.9976414248158803,
+      "iou": 0.9952939492063776
+    },
+    {
+      "class_id": 1,
+      "class_name": "L1-L2",
+      "support": 5328,
+      "precision": 0.0,
+      "recall": 0.0,
+      "dice": 0.0,
+      "iou": 0.0
+    },
+    {
+      "class_id": 2,
+      "class_name": "L2-L3",
+      "support": 6478,
+      "precision": 0.0,
+      "recall": 0.0,
+      "dice": 0.0,
+      "iou": 0.0
+    },
+    {
+      "class_id": 3,
+      "class_name": "L3-L4",
+      "support": 7216,
+      "precision": 0.0,
+      "recall": 0.0,
+      "dice": 0.0,
+      "iou": 0.0
+    },
+    {
+      "class_id": 4,
+      "class_name": "L4-L5",
+      "support": 7191,
+      "precision": 0.21288331726133075,
+      "recall": 0.7674871366986511,
+      "dice": 0.3333132020775456,
+      "iou": 0.19998550567090626
+    },
+    {
+      "class_id": 5,
+      "class_name": "L5-S1",
+      "support": 6838,
+      "precision": 0.0,
+      "recall": 0.0,
+      "dice": 0.0,
+      "iou": 0.0
+    }
+  ],
+  "confusion_matrix": [
+    [
+      2446967,
+      0,
+      0,
+      0,
+      2222,
+      0
+    ],
+    [
+      1751,
+      0,
+      0,
+      0,
+      3577,
+      0
+    ],
+    [
+      2199,
+      0,
+      0,
+      0,
+      4279,
+      0
+    ],
+    [
+      2072,
+      0,
+      0,
+      0,
+      5144,
+      0
+    ],
+    [
+      1672,
+      0,
+      0,
+      0,
+      5519,
+      0
+    ],
+    [
+      1654,
+      0,
+      0,
+      0,
+      5184,
+      0
+    ]
+  ],
+  "loss": 1.494484725751375,
+  "cross_entropy_loss": 0.5249769060235274,
+  "dice_loss": 0.9695078165907609
+}

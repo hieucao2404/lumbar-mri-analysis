@@ -1,0 +1,40 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "loss": 1.332648978676907,
+      "dice": 0.0020011770319014917,
+      "precision": 0.00039310913619606993,
+      "recall": 0.02192121466924978,
+      "predicted_fraction": 0.024514575337254724,
+      "target_fraction": 0.014646929363871729
+    },
+    "validation": {
+      "loss": 1.2513904759758396,
+      "dice": 0.0010611752636338536,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.016535307231702302
+    }
+  },
+  {
+    "epoch": 2,
+    "train": {
+      "loss": 1.205852979837462,
+      "dice": 0.0012850558417740949,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.014646929363871729
+    },
+    "validation": {
+      "loss": 1.1428890604721873,
+      "dice": 0.0010611752636338536,
+      "precision": 0.0,
+      "recall": 0.0,
+      "predicted_fraction": 0.0,
+      "target_fraction": 0.016535307231702302
+    }
+  }
+]
