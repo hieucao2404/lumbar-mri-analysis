@@ -1,0 +1,34 @@
+{
+  "epoch": 28,
+  "loss": 0.5083086313085353,
+  "samples": 188,
+  "threshold": 0.5,
+  "labels": {
+    "bulging": {
+      "support_positive": 137,
+      "support_negative": 51,
+      "predicted_positive": 146,
+      "tp": 122,
+      "fp": 24,
+      "fn": 15,
+      "tn": 27,
+      "precision": 0.8356164383561644,
+      "recall": 0.8905109489051095,
+      "f1": 0.8621908127208481,
+      "average_precision": 0.872396211634565
+    },
+    "herniation": {
+      "support_positive": 9,
+      "support_negative": 179,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 9,
+      "tn": 179,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.27725600000624845
+    }
+  }
+}

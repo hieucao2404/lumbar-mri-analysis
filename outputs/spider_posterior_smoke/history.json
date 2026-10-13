@@ -1,0 +1,140 @@
+[
+  {
+    "epoch": 1,
+    "training": {
+      "loss": 0.6743161855741989,
+      "samples": 860,
+      "threshold": 0.5,
+      "labels": {
+        "bulging": {
+          "support_positive": 522,
+          "support_negative": 338,
+          "predicted_positive": 825,
+          "tp": 499,
+          "fp": 326,
+          "fn": 23,
+          "tn": 12,
+          "precision": 0.6048484848484849,
+          "recall": 0.9559386973180076,
+          "f1": 0.7409057164068299,
+          "average_precision": 0.6230636092793845
+        },
+        "herniation": {
+          "support_positive": 61,
+          "support_negative": 799,
+          "predicted_positive": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 61,
+          "tn": 799,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "average_precision": 0.07536969642919038
+        }
+      }
+    },
+    "validation": {
+      "loss": 0.5824610540207397,
+      "samples": 188,
+      "threshold": 0.5,
+      "labels": {
+        "bulging": {
+          "support_positive": 137,
+          "support_negative": 51,
+          "predicted_positive": 188,
+          "tp": 137,
+          "fp": 51,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.7287234042553191,
+          "recall": 1.0,
+          "f1": 0.8430769230769231,
+          "average_precision": 0.7328514271654851
+        },
+        "herniation": {
+          "support_positive": 9,
+          "support_negative": 179,
+          "predicted_positive": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9,
+          "tn": 179,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "average_precision": 0.13018387111954363
+        }
+      }
+    }
+  },
+  {
+    "epoch": 2,
+    "training": {
+      "loss": 0.6747265868408735,
+      "samples": 860,
+      "threshold": 0.5,
+      "labels": {
+        "bulging": {
+          "support_positive": 522,
+          "support_negative": 338,
+          "predicted_positive": 853,
+          "tp": 521,
+          "fp": 332,
+          "fn": 1,
+          "tn": 6,
+          "precision": 0.6107854630715123,
+          "recall": 0.9980842911877394,
+          "f1": 0.7578181818181816,
+          "average_precision": 0.6220716437020027
+        },
+        "herniation": {
+          "support_positive": 61,
+          "support_negative": 799,
+          "predicted_positive": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 61,
+          "tn": 799,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "average_precision": 0.06018485096570134
+        }
+      }
+    },
+    "validation": {
+      "loss": 0.5803266002776775,
+      "samples": 188,
+      "threshold": 0.5,
+      "labels": {
+        "bulging": {
+          "support_positive": 137,
+          "support_negative": 51,
+          "predicted_positive": 188,
+          "tp": 137,
+          "fp": 51,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.7287234042553191,
+          "recall": 1.0,
+          "f1": 0.8430769230769231,
+          "average_precision": 0.7035915175964257
+        },
+        "herniation": {
+          "support_positive": 9,
+          "support_negative": 179,
+          "predicted_positive": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9,
+          "tn": 179,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "average_precision": 0.17655133183055868
+        }
+      }
+    }
+  }
+]

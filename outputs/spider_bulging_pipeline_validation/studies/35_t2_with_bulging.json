@@ -1,0 +1,77 @@
+{
+  "study_id": "35",
+  "series_name": "35_t2",
+  "view": "sagittal",
+  "sequence": "T2",
+  "status": "uncertain",
+  "reasons": [
+    "Fewer than five disc components were detected",
+    "Only 0 of five lumbar levels were available"
+  ],
+  "sagittal_slice": 14,
+  "classification_slice_policy": "localization_selected_slice",
+  "level_decoder": {
+    "method": "gated_hybrid",
+    "selected_source": "position",
+    "decoder_status": "uncertain",
+    "spacing_cv": null
+  },
+  "localization": {
+    "probability_threshold": 0.5,
+    "minimum_component_area": 25,
+    "detected_components": 3
+  },
+  "levels": [
+    {
+      "position": "L1-L2",
+      "status": "unavailable",
+      "reason": "No valid detected component was assigned to this lumbar level",
+      "disc_degeneration": "unavailable",
+      "spinal_canal_stenosis": "unavailable",
+      "posterior_disc_finding": "unavailable",
+      "disc_bulging": "unavailable",
+      "disc_herniation": "unavailable"
+    },
+    {
+      "position": "L2-L3",
+      "status": "unavailable",
+      "reason": "No valid detected component was assigned to this lumbar level",
+      "disc_degeneration": "unavailable",
+      "spinal_canal_stenosis": "unavailable",
+      "posterior_disc_finding": "unavailable",
+      "disc_bulging": "unavailable",
+      "disc_herniation": "unavailable"
+    },
+    {
+      "position": "L3-L4",
+      "status": "unavailable",
+      "reason": "No valid detected component was assigned to this lumbar level",
+      "disc_degeneration": "unavailable",
+      "spinal_canal_stenosis": "unavailable",
+      "posterior_disc_finding": "unavailable",
+      "disc_bulging": "unavailable",
+      "disc_herniation": "unavailable"
+    },
+    {
+      "position": "L4-L5",
+      "status": "unavailable",
+      "reason": "No valid detected component was assigned to this lumbar level",
+      "disc_degeneration": "unavailable",
+      "spinal_canal_stenosis": "unavailable",
+      "posterior_disc_finding": "unavailable",
+      "disc_bulging": "unavailable",
+      "disc_herniation": "unavailable"
+    },
+    {
+      "position": "L5-S1",
+      "status": "unavailable",
+      "reason": "No valid detected component was assigned to this lumbar level",
+      "disc_degeneration": "unavailable",
+      "spinal_canal_stenosis": "unavailable",
+      "posterior_disc_finding": "unavailable",
+      "disc_bulging": "unavailable",
+      "disc_herniation": "unavailable"
+    }
+  ],
+  "disclaimer": "Research prototype output. This result is not a confirmed clinical diagnosis."
+}

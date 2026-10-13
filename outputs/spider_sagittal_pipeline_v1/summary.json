@@ -1,0 +1,112 @@
+{
+  "validation_studies": 38,
+  "excluded_patients": [],
+  "matching_mask_iou_threshold": 0.5,
+  "localization_all_disc_components": {
+    "references": 264,
+    "predictions": 264,
+    "matched": 243,
+    "precision": 0.9204545454545454,
+    "recall": 0.9204545454545454,
+    "f1": 0.9204545454545455
+  },
+  "lumbar_level_end_to_end": {
+    "references": 187,
+    "correct_detection_and_level": 166,
+    "accuracy": 0.8877005347593583
+  },
+  "pfirrmann_given_correct_detection_and_level": {
+    "samples": 166,
+    "accuracy": 0.4457831325301205,
+    "macro_f1": 0.4061374428615808,
+    "per_grade": [
+      {
+        "grade": 1,
+        "support": 16,
+        "precision": 0.75,
+        "recall": 0.1875,
+        "f1": 0.3
+      },
+      {
+        "grade": 2,
+        "support": 17,
+        "precision": 0.41935483870967744,
+        "recall": 0.7647058823529411,
+        "f1": 0.5416666666666666
+      },
+      {
+        "grade": 3,
+        "support": 58,
+        "precision": 0.4827586206896552,
+        "recall": 0.2413793103448276,
+        "f1": 0.32183908045977017
+      },
+      {
+        "grade": 4,
+        "support": 50,
+        "precision": 0.4222222222222222,
+        "recall": 0.76,
+        "f1": 0.5428571428571428
+      },
+      {
+        "grade": 5,
+        "support": 25,
+        "precision": 0.5,
+        "recall": 0.24,
+        "f1": 0.32432432432432434
+      }
+    ],
+    "confusion_matrix": [
+      [
+        3,
+        7,
+        4,
+        1,
+        1
+      ],
+      [
+        1,
+        13,
+        2,
+        1,
+        0
+      ],
+      [
+        0,
+        7,
+        14,
+        34,
+        3
+      ],
+      [
+        0,
+        3,
+        7,
+        38,
+        2
+      ],
+      [
+        0,
+        1,
+        2,
+        16,
+        6
+      ]
+    ],
+    "mae": 0.6746987951807228
+  },
+  "detection_level_and_grade_end_to_end": {
+    "references": 187,
+    "all_three_correct": 74,
+    "accuracy": 0.39572192513368987
+  },
+  "complete_studies": {
+    "eligible_with_five_reference_levels": 36,
+    "all_five_levels_correct": 28,
+    "all_five_levels_and_grades_correct": 2
+  },
+  "decoder_sources": {
+    "fused_sequence": 30,
+    "position": 8
+  }
+}

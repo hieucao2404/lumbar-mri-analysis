@@ -1,0 +1,671 @@
+{
+  "checkpoint": "outputs/spider_disc_multitask_coord_v2/best_model.pt",
+  "subset": "validation",
+  "images": 38,
+  "excluded_patients": [],
+  "configuration": {
+    "probability_threshold": 0.5,
+    "minimum_area": 25,
+    "matching_iou": 0.5,
+    "learned_weight": 1.0,
+    "position_weight": 0.75,
+    "upper_weight": 0.2,
+    "maximum_spacing_cv": 0.55,
+    "hybrid_spacing_cv": 0.2
+  },
+  "localization": {
+    "reference_components": 264,
+    "predicted_components": 264,
+    "matched_components": 243,
+    "precision": 0.9204545454545454,
+    "recall": 0.9204545454545454,
+    "f1": 0.9204545454545455,
+    "mean_matched_iou": 0.7757540935906697
+  },
+  "decoder_status_counts": {
+    "ok": 36,
+    "uncertain": 2
+  },
+  "hybrid_source_counts": {
+    "fused_sequence": 30,
+    "position": 8
+  },
+  "methods": {
+    "independent": {
+      "matched_component_level_metrics": {
+        "accuracy": 0.7037037037037037,
+        "macro_f1": 0.6788345278354907,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 34,
+            "precision": 0.6052631578947368,
+            "recall": 0.6764705882352942,
+            "f1": 0.6388888888888888
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 35,
+            "precision": 0.5897435897435898,
+            "recall": 0.6571428571428571,
+            "f1": 0.6216216216216216
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 37,
+            "precision": 0.6571428571428571,
+            "recall": 0.6216216216216216,
+            "f1": 0.6388888888888888
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 34,
+            "precision": 0.5526315789473685,
+            "recall": 0.6176470588235294,
+            "f1": 0.5833333333333334
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 34,
+            "precision": 0.7857142857142857,
+            "recall": 0.6470588235294118,
+            "f1": 0.7096774193548386
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 69,
+            "precision": 0.9076923076923077,
+            "recall": 0.855072463768116,
+            "f1": 0.8805970149253731
+          }
+        ],
+        "confusion_matrix": [
+          [
+            23,
+            7,
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            6,
+            23,
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            7,
+            23,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            6,
+            21,
+            6,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            11,
+            22,
+            0
+          ],
+          [
+            8,
+            2,
+            0,
+            0,
+            0,
+            59
+          ]
+        ]
+      },
+      "lumbar_references": 187,
+      "correct_end_to_end_lumbar": 112,
+      "end_to_end_lumbar_accuracy": 0.5989304812834224,
+      "per_level_end_to_end": [
+        {
+          "class_id": 0,
+          "class_name": "L1-L2",
+          "reference_count": 36,
+          "correct_detection_and_level": 23,
+          "end_to_end_accuracy": 0.6388888888888888
+        },
+        {
+          "class_id": 1,
+          "class_name": "L2-L3",
+          "reference_count": 37,
+          "correct_detection_and_level": 23,
+          "end_to_end_accuracy": 0.6216216216216216
+        },
+        {
+          "class_id": 2,
+          "class_name": "L3-L4",
+          "reference_count": 38,
+          "correct_detection_and_level": 23,
+          "end_to_end_accuracy": 0.6052631578947368
+        },
+        {
+          "class_id": 3,
+          "class_name": "L4-L5",
+          "reference_count": 38,
+          "correct_detection_and_level": 21,
+          "end_to_end_accuracy": 0.5526315789473685
+        },
+        {
+          "class_id": 4,
+          "class_name": "L5-S1",
+          "reference_count": 38,
+          "correct_detection_and_level": 22,
+          "end_to_end_accuracy": 0.5789473684210527
+        },
+        {
+          "class_id": 5,
+          "class_name": "Upper",
+          "reference_count": 77,
+          "correct_detection_and_level": 59,
+          "end_to_end_accuracy": 0.7662337662337663
+        }
+      ],
+      "all_annotated_lumbar_correct": 12,
+      "images": 38,
+      "complete_study_accuracy": 0.3157894736842105,
+      "eligible_five_level_studies": 36,
+      "all_five_levels_correct": 12,
+      "all_five_level_accuracy": 0.3333333333333333
+    },
+    "position": {
+      "matched_component_level_metrics": {
+        "accuracy": 0.934156378600823,
+        "macro_f1": 0.9325707807809166,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 34,
+            "precision": 0.8787878787878788,
+            "recall": 0.8529411764705882,
+            "f1": 0.8656716417910447
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 35,
+            "precision": 0.9142857142857143,
+            "recall": 0.9142857142857143,
+            "f1": 0.9142857142857143
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 37,
+            "precision": 0.9444444444444444,
+            "recall": 0.918918918918919,
+            "f1": 0.9315068493150684
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 34,
+            "precision": 0.9696969696969697,
+            "recall": 0.9411764705882353,
+            "f1": 0.955223880597015
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 34,
+            "precision": 1.0,
+            "recall": 0.9705882352941176,
+            "f1": 0.9850746268656716
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 69,
+            "precision": 0.9178082191780822,
+            "recall": 0.9710144927536232,
+            "f1": 0.943661971830986
+          }
+        ],
+        "confusion_matrix": [
+          [
+            29,
+            2,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            2,
+            32,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            34,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            32,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            33,
+            1
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            67
+          ]
+        ]
+      },
+      "lumbar_references": 187,
+      "correct_end_to_end_lumbar": 160,
+      "end_to_end_lumbar_accuracy": 0.8556149732620321,
+      "per_level_end_to_end": [
+        {
+          "class_id": 0,
+          "class_name": "L1-L2",
+          "reference_count": 36,
+          "correct_detection_and_level": 29,
+          "end_to_end_accuracy": 0.8055555555555556
+        },
+        {
+          "class_id": 1,
+          "class_name": "L2-L3",
+          "reference_count": 37,
+          "correct_detection_and_level": 32,
+          "end_to_end_accuracy": 0.8648648648648649
+        },
+        {
+          "class_id": 2,
+          "class_name": "L3-L4",
+          "reference_count": 38,
+          "correct_detection_and_level": 34,
+          "end_to_end_accuracy": 0.8947368421052632
+        },
+        {
+          "class_id": 3,
+          "class_name": "L4-L5",
+          "reference_count": 38,
+          "correct_detection_and_level": 32,
+          "end_to_end_accuracy": 0.8421052631578947
+        },
+        {
+          "class_id": 4,
+          "class_name": "L5-S1",
+          "reference_count": 38,
+          "correct_detection_and_level": 33,
+          "end_to_end_accuracy": 0.868421052631579
+        },
+        {
+          "class_id": 5,
+          "class_name": "Upper",
+          "reference_count": 77,
+          "correct_detection_and_level": 67,
+          "end_to_end_accuracy": 0.8701298701298701
+        }
+      ],
+      "all_annotated_lumbar_correct": 28,
+      "images": 38,
+      "complete_study_accuracy": 0.7368421052631579,
+      "eligible_five_level_studies": 36,
+      "all_five_levels_correct": 28,
+      "all_five_level_accuracy": 0.7777777777777778
+    },
+    "fused_sequence": {
+      "matched_component_level_metrics": {
+        "accuracy": 0.9259259259259259,
+        "macro_f1": 0.9279166495738976,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 34,
+            "precision": 0.8529411764705882,
+            "recall": 0.8529411764705882,
+            "f1": 0.8529411764705882
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 35,
+            "precision": 0.9166666666666666,
+            "recall": 0.9428571428571428,
+            "f1": 0.9295774647887323
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 37,
+            "precision": 0.9714285714285714,
+            "recall": 0.918918918918919,
+            "f1": 0.9444444444444445
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 34,
+            "precision": 0.9411764705882353,
+            "recall": 0.9411764705882353,
+            "f1": 0.9411764705882353
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 34,
+            "precision": 1.0,
+            "recall": 0.9705882352941176,
+            "f1": 0.9850746268656716
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 69,
+            "precision": 0.9014084507042254,
+            "recall": 0.927536231884058,
+            "f1": 0.9142857142857144
+          }
+        ],
+        "confusion_matrix": [
+          [
+            29,
+            3,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            33,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            34,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            32,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            33,
+            1
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            0,
+            64
+          ]
+        ]
+      },
+      "lumbar_references": 187,
+      "correct_end_to_end_lumbar": 161,
+      "end_to_end_lumbar_accuracy": 0.8609625668449198,
+      "per_level_end_to_end": [
+        {
+          "class_id": 0,
+          "class_name": "L1-L2",
+          "reference_count": 36,
+          "correct_detection_and_level": 29,
+          "end_to_end_accuracy": 0.8055555555555556
+        },
+        {
+          "class_id": 1,
+          "class_name": "L2-L3",
+          "reference_count": 37,
+          "correct_detection_and_level": 33,
+          "end_to_end_accuracy": 0.8918918918918919
+        },
+        {
+          "class_id": 2,
+          "class_name": "L3-L4",
+          "reference_count": 38,
+          "correct_detection_and_level": 34,
+          "end_to_end_accuracy": 0.8947368421052632
+        },
+        {
+          "class_id": 3,
+          "class_name": "L4-L5",
+          "reference_count": 38,
+          "correct_detection_and_level": 32,
+          "end_to_end_accuracy": 0.8421052631578947
+        },
+        {
+          "class_id": 4,
+          "class_name": "L5-S1",
+          "reference_count": 38,
+          "correct_detection_and_level": 33,
+          "end_to_end_accuracy": 0.868421052631579
+        },
+        {
+          "class_id": 5,
+          "class_name": "Upper",
+          "reference_count": 77,
+          "correct_detection_and_level": 64,
+          "end_to_end_accuracy": 0.8311688311688312
+        }
+      ],
+      "all_annotated_lumbar_correct": 26,
+      "images": 38,
+      "complete_study_accuracy": 0.6842105263157895,
+      "eligible_five_level_studies": 36,
+      "all_five_levels_correct": 26,
+      "all_five_level_accuracy": 0.7222222222222222
+    },
+    "gated_hybrid": {
+      "matched_component_level_metrics": {
+        "accuracy": 0.9588477366255144,
+        "macro_f1": 0.959138240348881,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "L1-L2",
+            "support": 34,
+            "precision": 0.9393939393939394,
+            "recall": 0.9117647058823529,
+            "f1": 0.9253731343283583
+          },
+          {
+            "class_id": 1,
+            "class_name": "L2-L3",
+            "support": 35,
+            "precision": 0.9444444444444444,
+            "recall": 0.9714285714285714,
+            "f1": 0.9577464788732395
+          },
+          {
+            "class_id": 2,
+            "class_name": "L3-L4",
+            "support": 37,
+            "precision": 0.9722222222222222,
+            "recall": 0.9459459459459459,
+            "f1": 0.9589041095890412
+          },
+          {
+            "class_id": 3,
+            "class_name": "L4-L5",
+            "support": 34,
+            "precision": 0.9705882352941176,
+            "recall": 0.9705882352941176,
+            "f1": 0.9705882352941176
+          },
+          {
+            "class_id": 4,
+            "class_name": "L5-S1",
+            "support": 34,
+            "precision": 1.0,
+            "recall": 0.9705882352941176,
+            "f1": 0.9850746268656716
+          },
+          {
+            "class_id": 5,
+            "class_name": "Upper",
+            "support": 69,
+            "precision": 0.9436619718309859,
+            "recall": 0.9710144927536232,
+            "f1": 0.9571428571428571
+          }
+        ],
+        "confusion_matrix": [
+          [
+            31,
+            2,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            34,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            35,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            33,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            33,
+            1
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            67
+          ]
+        ]
+      },
+      "lumbar_references": 187,
+      "correct_end_to_end_lumbar": 166,
+      "end_to_end_lumbar_accuracy": 0.8877005347593583,
+      "per_level_end_to_end": [
+        {
+          "class_id": 0,
+          "class_name": "L1-L2",
+          "reference_count": 36,
+          "correct_detection_and_level": 31,
+          "end_to_end_accuracy": 0.8611111111111112
+        },
+        {
+          "class_id": 1,
+          "class_name": "L2-L3",
+          "reference_count": 37,
+          "correct_detection_and_level": 34,
+          "end_to_end_accuracy": 0.918918918918919
+        },
+        {
+          "class_id": 2,
+          "class_name": "L3-L4",
+          "reference_count": 38,
+          "correct_detection_and_level": 35,
+          "end_to_end_accuracy": 0.9210526315789473
+        },
+        {
+          "class_id": 3,
+          "class_name": "L4-L5",
+          "reference_count": 38,
+          "correct_detection_and_level": 33,
+          "end_to_end_accuracy": 0.868421052631579
+        },
+        {
+          "class_id": 4,
+          "class_name": "L5-S1",
+          "reference_count": 38,
+          "correct_detection_and_level": 33,
+          "end_to_end_accuracy": 0.868421052631579
+        },
+        {
+          "class_id": 5,
+          "class_name": "Upper",
+          "reference_count": 77,
+          "correct_detection_and_level": 67,
+          "end_to_end_accuracy": 0.8701298701298701
+        }
+      ],
+      "all_annotated_lumbar_correct": 28,
+      "images": 38,
+      "complete_study_accuracy": 0.7368421052631579,
+      "eligible_five_level_studies": 36,
+      "all_five_levels_correct": 28,
+      "all_five_level_accuracy": 0.7777777777777778
+    }
+  }
+}

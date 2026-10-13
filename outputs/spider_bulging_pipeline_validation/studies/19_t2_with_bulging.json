@@ -1,0 +1,164 @@
+{
+  "study_id": "19",
+  "series_name": "19_t2",
+  "view": "sagittal",
+  "sequence": "T2",
+  "status": "ok",
+  "reasons": [],
+  "sagittal_slice": 15,
+  "classification_slice_policy": "localization_selected_slice",
+  "level_decoder": {
+    "method": "gated_hybrid",
+    "selected_source": "fused_sequence",
+    "decoder_status": "ok",
+    "spacing_cv": 0.026059175324788273
+  },
+  "localization": {
+    "probability_threshold": 0.5,
+    "minimum_component_area": 25,
+    "detected_components": 6
+  },
+  "levels": [
+    {
+      "position": "L1-L2",
+      "status": "available",
+      "level_assignment_method": "fused_sequence",
+      "level_model_probability": 0.47712886333465576,
+      "bounding_box_original": [
+        143,
+        60,
+        197,
+        80
+      ],
+      "component_id": 2,
+      "component_area_256": 185,
+      "disc_degeneration": "Pfirrmann III",
+      "disc_degeneration_confidence": 0.3939764201641083,
+      "disc_degeneration_probabilities": {
+        "Pfirrmann I": 0.04744032770395279,
+        "Pfirrmann II": 0.15340885519981384,
+        "Pfirrmann III": 0.3939764201641083,
+        "Pfirrmann IV": 0.2300119400024414,
+        "Pfirrmann V": 0.17516246438026428
+      },
+      "spinal_canal_stenosis": "unavailable",
+      "posterior_disc_finding": "unavailable",
+      "disc_bulging": "detected",
+      "disc_bulging_probability": 0.5962488055229187,
+      "disc_herniation": "unavailable"
+    },
+    {
+      "position": "L2-L3",
+      "status": "available",
+      "level_assignment_method": "fused_sequence",
+      "level_model_probability": 0.4717252850532532,
+      "bounding_box_original": [
+        138,
+        109,
+        184,
+        126
+      ],
+      "component_id": 3,
+      "component_area_256": 246,
+      "disc_degeneration": "Pfirrmann II",
+      "disc_degeneration_confidence": 0.4338143765926361,
+      "disc_degeneration_probabilities": {
+        "Pfirrmann I": 0.32767000794410706,
+        "Pfirrmann II": 0.4338143765926361,
+        "Pfirrmann III": 0.18101844191551208,
+        "Pfirrmann IV": 0.03876589238643646,
+        "Pfirrmann V": 0.01873132772743702
+      },
+      "spinal_canal_stenosis": "unavailable",
+      "posterior_disc_finding": "unavailable",
+      "disc_bulging": "not_detected",
+      "disc_bulging_probability": 0.1861492395401001,
+      "disc_herniation": "unavailable"
+    },
+    {
+      "position": "L3-L4",
+      "status": "available",
+      "level_assignment_method": "fused_sequence",
+      "level_model_probability": 0.4575533866882324,
+      "bounding_box_original": [
+        130,
+        158,
+        177,
+        172
+      ],
+      "component_id": 4,
+      "component_area_256": 245,
+      "disc_degeneration": "Pfirrmann II",
+      "disc_degeneration_confidence": 0.45572149753570557,
+      "disc_degeneration_probabilities": {
+        "Pfirrmann I": 0.2568375766277313,
+        "Pfirrmann II": 0.45572149753570557,
+        "Pfirrmann III": 0.21079707145690918,
+        "Pfirrmann IV": 0.05169378221035004,
+        "Pfirrmann V": 0.024949995800852776
+      },
+      "spinal_canal_stenosis": "unavailable",
+      "posterior_disc_finding": "unavailable",
+      "disc_bulging": "detected",
+      "disc_bulging_probability": 0.5666249990463257,
+      "disc_herniation": "unavailable"
+    },
+    {
+      "position": "L4-L5",
+      "status": "available",
+      "level_assignment_method": "fused_sequence",
+      "level_model_probability": 0.5189386606216431,
+      "bounding_box_original": [
+        132,
+        205,
+        180,
+        228
+      ],
+      "component_id": 5,
+      "component_area_256": 292,
+      "disc_degeneration": "Pfirrmann III",
+      "disc_degeneration_confidence": 0.3986932337284088,
+      "disc_degeneration_probabilities": {
+        "Pfirrmann I": 0.04726363718509674,
+        "Pfirrmann II": 0.14326153695583344,
+        "Pfirrmann III": 0.3986932337284088,
+        "Pfirrmann IV": 0.22741222381591797,
+        "Pfirrmann V": 0.18336932361125946
+      },
+      "spinal_canal_stenosis": "unavailable",
+      "posterior_disc_finding": "unavailable",
+      "disc_bulging": "detected",
+      "disc_bulging_probability": 0.6581595540046692,
+      "disc_herniation": "unavailable"
+    },
+    {
+      "position": "L5-S1",
+      "status": "available",
+      "level_assignment_method": "fused_sequence",
+      "level_model_probability": 0.5923763513565063,
+      "bounding_box_original": [
+        153,
+        243,
+        195,
+        280
+      ],
+      "component_id": 6,
+      "component_area_256": 199,
+      "disc_degeneration": "Pfirrmann V",
+      "disc_degeneration_confidence": 0.36772873997688293,
+      "disc_degeneration_probabilities": {
+        "Pfirrmann I": 0.038283780217170715,
+        "Pfirrmann II": 0.09692680090665817,
+        "Pfirrmann III": 0.2084144651889801,
+        "Pfirrmann IV": 0.2886461913585663,
+        "Pfirrmann V": 0.36772873997688293
+      },
+      "spinal_canal_stenosis": "unavailable",
+      "posterior_disc_finding": "unavailable",
+      "disc_bulging": "detected",
+      "disc_bulging_probability": 0.7093835473060608,
+      "disc_herniation": "unavailable"
+    }
+  ],
+  "disclaimer": "Research prototype output. This result is not a confirmed clinical diagnosis."
+}

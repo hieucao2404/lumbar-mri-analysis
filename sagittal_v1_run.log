@@ -1,0 +1,47 @@
+[1/38] 101_t2: levels=5/5 grades=5/5 decoder=fused_sequence
+[2/38] 107_t2: levels=5/5 grades=2/5 decoder=position
+[3/38] 112_t2: levels=5/5 grades=0/5 decoder=fused_sequence
+[4/38] 115_t2: levels=5/5 grades=2/5 decoder=fused_sequence
+[5/38] 118_t2: levels=5/5 grades=5/5 decoder=fused_sequence
+[6/38] 11_t2: levels=5/5 grades=1/5 decoder=fused_sequence
+[7/38] 129_t2: levels=5/5 grades=4/5 decoder=fused_sequence
+[8/38] 136_t2: levels=5/5 grades=2/5 decoder=fused_sequence
+[9/38] 140_t2: levels=5/5 grades=1/5 decoder=position
+[10/38] 145_t2: levels=2/5 grades=0/5 decoder=position
+[11/38] 152_t2: levels=3/5 grades=1/5 decoder=position
+[12/38] 161_t2: levels=5/5 grades=4/5 decoder=fused_sequence
+[13/38] 165_t2: levels=5/5 grades=0/5 decoder=fused_sequence
+[14/38] 168_t2: levels=5/5 grades=3/5 decoder=fused_sequence
+[15/38] 171_t2: levels=5/5 grades=2/5 decoder=fused_sequence
+[16/38] 172_t2: levels=5/5 grades=3/5 decoder=fused_sequence
+[17/38] 177_t2: levels=3/4 grades=1/4 decoder=position
+[18/38] 179_t2: levels=5/5 grades=0/5 decoder=fused_sequence
+[19/38] 182_t2: levels=5/5 grades=1/5 decoder=position
+[20/38] 192_t2: levels=5/5 grades=2/5 decoder=fused_sequence
+[21/38] 198_t2: levels=4/5 grades=2/5 decoder=fused_sequence
+[22/38] 19_t2: levels=5/5 grades=1/5 decoder=fused_sequence
+[23/38] 208_t2: levels=5/5 grades=2/5 decoder=fused_sequence
+[24/38] 210_t2: levels=5/5 grades=0/5 decoder=fused_sequence
+[25/38] 234_t2: levels=4/5 grades=0/5 decoder=fused_sequence
+[26/38] 236_t2: levels=5/5 grades=2/5 decoder=fused_sequence
+[27/38] 257_t2: levels=5/5 grades=3/5 decoder=fused_sequence
+[28/38] 2_t2: levels=5/5 grades=3/5 decoder=fused_sequence
+[29/38] 31_t2: levels=5/5 grades=4/5 decoder=fused_sequence
+[30/38] 35_t2: levels=0/3 grades=0/3 decoder=position
+[31/38] 38_t2: levels=0/5 grades=0/5 decoder=fused_sequence
+[32/38] 53_t2: levels=5/5 grades=3/5 decoder=fused_sequence
+[33/38] 59_t2: levels=4/5 grades=3/5 decoder=fused_sequence
+[34/38] 61_t2: levels=5/5 grades=4/5 decoder=fused_sequence
+[35/38] 73_t2: levels=4/5 grades=2/5 decoder=fused_sequence
+[36/38] 74_t2: levels=5/5 grades=2/5 decoder=fused_sequence
+[37/38] 75_t2: levels=5/5 grades=4/5 decoder=fused_sequence
+[38/38] 93_t2: levels=2/5 grades=0/5 decoder=position
+
+Validation studies: 38
+Localization F1: 0.9205
+End-to-end level accuracy: 0.8877
+Pfirrmann accuracy on correctly detected and leveled discs: 0.4458
+Pfirrmann macro F1: 0.4061
+Pfirrmann MAE: 0.6746987951807228
+End-to-end detection + level + grade: 0.3957
+Saved: outputs/spider_sagittal_pipeline_v1/summary.json

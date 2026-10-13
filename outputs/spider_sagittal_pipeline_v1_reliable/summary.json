@@ -1,0 +1,115 @@
+{
+  "validation_studies": 36,
+  "excluded_patients": [
+    "107",
+    "152"
+  ],
+  "matching_mask_iou_threshold": 0.5,
+  "localization_all_disc_components": {
+    "references": 248,
+    "predictions": 246,
+    "matched": 229,
+    "precision": 0.9308943089430894,
+    "recall": 0.9233870967741935,
+    "f1": 0.9271255060728745
+  },
+  "lumbar_level_end_to_end": {
+    "references": 177,
+    "correct_detection_and_level": 158,
+    "accuracy": 0.8926553672316384
+  },
+  "pfirrmann_given_correct_detection_and_level": {
+    "samples": 158,
+    "accuracy": 0.44936708860759494,
+    "macro_f1": 0.4093106919279667,
+    "per_grade": [
+      {
+        "grade": 1,
+        "support": 16,
+        "precision": 0.75,
+        "recall": 0.1875,
+        "f1": 0.3
+      },
+      {
+        "grade": 2,
+        "support": 17,
+        "precision": 0.41935483870967744,
+        "recall": 0.7647058823529411,
+        "f1": 0.5416666666666666
+      },
+      {
+        "grade": 3,
+        "support": 54,
+        "precision": 0.48,
+        "recall": 0.2222222222222222,
+        "f1": 0.3037974683544304
+      },
+      {
+        "grade": 4,
+        "support": 47,
+        "precision": 0.42045454545454547,
+        "recall": 0.7872340425531915,
+        "f1": 0.5481481481481482
+      },
+      {
+        "grade": 5,
+        "support": 24,
+        "precision": 0.6,
+        "recall": 0.25,
+        "f1": 0.35294117647058826
+      }
+    ],
+    "confusion_matrix": [
+      [
+        3,
+        7,
+        4,
+        1,
+        1
+      ],
+      [
+        1,
+        13,
+        2,
+        1,
+        0
+      ],
+      [
+        0,
+        7,
+        12,
+        34,
+        1
+      ],
+      [
+        0,
+        3,
+        5,
+        37,
+        2
+      ],
+      [
+        0,
+        1,
+        2,
+        15,
+        6
+      ]
+    ],
+    "mae": 0.6645569620253164
+  },
+  "detection_level_and_grade_end_to_end": {
+    "references": 177,
+    "all_three_correct": 71,
+    "accuracy": 0.4011299435028249
+  },
+  "complete_studies": {
+    "eligible_with_five_reference_levels": 34,
+    "all_five_levels_correct": 27,
+    "all_five_levels_and_grades_correct": 2
+  },
+  "decoder_sources": {
+    "fused_sequence": 30,
+    "position": 6
+  }
+}
