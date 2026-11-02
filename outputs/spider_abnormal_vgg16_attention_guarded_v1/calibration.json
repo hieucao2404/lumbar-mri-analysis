@@ -1,0 +1,40 @@
+{
+  "task": "flag possible bulging or herniation for axial review",
+  "target_sensitivity": 0.91,
+  "threshold": 0.23432311415672302,
+  "calibration_source": "outputs/spider_abnormal_vgg16_attention_guarded_v1/oof_predictions.csv",
+  "calibration": {
+    "discs": 855,
+    "abnormal_discs": 551,
+    "normal_discs": 304,
+    "threshold": 0.23432311415672302,
+    "tp": 502,
+    "fp": 104,
+    "fn": 49,
+    "tn": 200,
+    "sensitivity": 0.911070780399274,
+    "precision": 0.8283828382838284,
+    "specificity": 0.6578947368421053,
+    "disc_ap": 0.9122722736207484,
+    "herniation_subset_flagged": 57,
+    "herniation_subset_total": 60
+  },
+  "validation_source": "outputs/spider_abnormal_vgg16_attention_guarded_v1/validation_predictions.csv",
+  "validation": {
+    "discs": 188,
+    "abnormal_discs": 143,
+    "normal_discs": 45,
+    "threshold": 0.23432311415672302,
+    "tp": 136,
+    "fp": 20,
+    "fn": 7,
+    "tn": 25,
+    "sensitivity": 0.951048951048951,
+    "precision": 0.8717948717948718,
+    "specificity": 0.5555555555555556,
+    "disc_ap": 0.9304338101198861,
+    "herniation_subset_flagged": 9,
+    "herniation_subset_total": 9
+  },
+  "caveat": "Validation has been reused; this is exploratory, not an independent performance claim."
+}

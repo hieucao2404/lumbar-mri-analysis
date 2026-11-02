@@ -1,5 +1,9 @@
 # Sagittal abnormal-disc model: axial integration handoff
 
+For the implemented paired DICOM runner, included checkpoints, fusion rules,
+and current evaluation, start with the [teammate guide](../TEAM_GUIDE.md).
+This page documents the prepared-stack interface.
+
 This guide is for the teammate integrating a separate axial MRI model. The
 sagittal model produces one **normal versus possible bulging or herniation**
 score for each available lumbar disc level. The axial model can then classify
@@ -47,14 +51,14 @@ to the axial model. A serial gate cannot recover a disc that the sagittal
 model falsely clears: it missed 7 of 143 abnormal discs on the reused SPIDER
 validation cohort. Treat `unavailable` as missing input, not as normal.
 
-## Artifacts to obtain from the sagittal-model owner
+## Included artifacts
 
 | Item | Needed for | Distribution |
 | --- | --- | --- |
-| `fixed.pt` from `outputs/spider_abnormal_vgg16_attention_guarded_v1/` | Classifier inference | Share separately; about 57 MB and ignored by Git |
+| `fixed.pt` from `outputs/spider_abnormal_vgg16_attention_guarded_v1/` | Classifier inference | Committed selected output; about 59 MB |
 | [Calibration JSON](attention_vgg16_calibration.json) | Fixed review threshold `0.23432311415672302` | Commit with this guide |
 | This repository's `src/models/` and `src/inference/attention_vgg16_stack.py` | Loading and scoring prepared stacks | Commit to Git |
-| Localizer checkpoint and raw-MRI preprocessing code | Only if the teammate will also run sagittal localization | Package and validate separately |
+| Localizer checkpoint and raw-MRI preprocessing code | Sagittal localization | Included; the paired runner supplies a Mendeley DICOM adapter |
 
 Expected SHA-256 for the current classifier checkpoint:
 
@@ -85,7 +89,7 @@ Check the environment:
 
 ### Fresh-checkout smoke test
 
-After receiving the checkpoint, this checks installation and JSON wiring
+After cloning, this checks installation and JSON wiring
 without any MRI data. The zero-filled stack is synthetic; its model score has
 **no medical meaning**.
 
@@ -156,7 +160,7 @@ contain ground-truth labels or an axial diagnosis.
 ## Run the classifier
 
 On the sagittal owner's machine, the following example works when the guarded
-SPIDER stacks and separately shared checkpoint are present:
+SPIDER stacks and the included checkpoint are present:
 
 ```bash
 .venv/bin/python -m src.inference.attention_vgg16_stack \
@@ -226,16 +230,18 @@ in these numbers.
 - Commit this guide, the stack runner, and the calibration copy. Keep raw MRI,
   generated crops, and experimental output directories outside ordinary Git
   commits.
-- Share the exact classifier checkpoint and verify its SHA-256 after transfer.
+- Verify the included checkpoints with `python -m scripts.check_pipeline_artifacts`.
 - Decide the shared study ID and lumbar numbering convention. Keep sagittal
   and axial series IDs separate.
-- For parallel mode, run both models on every available level and join by
-  `(study_id, level)`. For serial mode, route positive and unavailable
-  sagittal levels to axial; measure the complete cascade on target data.
+- For an all-level audit, join stage outputs by examination and level.
+  The implemented paired runner's `--serial` and `--concurrent` modes route
+  flagged supported levels. Missing results remain indeterminate. Concurrent
+  mode uses axial level workers after sagittal matching; it does not run the
+  sagittal and axial stages simultaneously.
 - Test one known stack against the saved score before using another dataset.
   In the local SPIDER example, `31_t2` L4-L5 scores about `0.989` and is
   flagged; its L5-S1 disc is labelled normal but also flagged at about
   `0.951`, illustrating a false alert.
-- The current raw-MRI inference command still uses the older CNN. Integrating
-  attention VGG16 into raw-MRI localization, and adapting it to the friend's
-  dataset, are separate implementation steps.
+- The older SPIDER raw-MRI command uses the CNN. The new paired Mendeley runner
+  integrates attention VGG16 with localization and axial matching. Adapting
+  another acquisition format still requires an input adapter and evaluation.

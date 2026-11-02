@@ -1,161 +1,72 @@
-Lumbar MRI Coarse-to-Fine Detection
+# Lumbar MRI sagittal–axial pipeline
 
-This project implements the proposed two-stage pipeline:
+Research prototype for per-disc **normal versus possible bulging/herniation**
+screening from sagittal T2 MRI, followed by matched axial analysis and geometric
+grading. The sagittal classifier is a fine-tuned VGG16 with attention over eight
+slices. Its box locates a disc; it does not outline a herniation.
 
-flowchart TD
-    A["Original MRI"] --> B["Letterbox to 128×128"]
-    B --> C["Stage 1: whole-lumbar localizer"]
-    C --> D["Map box to original coordinates"]
-    D --> E["Crop original MRI with margin"]
-    E --> F["Letterbox crop to 320×320"]
-    F --> G["Stage 2: anatomical-region detector"]
-    G --> H["Map regional boxes back to original MRI"]
+Start with the [teammate setup and code guide](docs/TEAM_GUIDE.md). It explains
+setup, repository structure, checkpoints, commands, result fields, and dataset
+adaptation. The [prepared-stack interface](docs/handoff/README.md) supports
+integration with another sagittal preprocessing adapter.
 
-Stage 1 answers only: where is the whole lumbar spine? Stage 2 examines the
-high-resolution crop and detects smaller annotated regions such as neural
-foramina. Later ROI heads can classify lumbar level, side, condition, and
-severity.
+## Architecture
 
-Important dataset requirement
+```mermaid
+flowchart LR
+    S[Sagittal T2 volume] --> L[MRI-only slice selection and disc localization]
+    L --> C[Eight sagittal crops per level]
+    C --> V[Shared VGG16 and slice attention]
+    V --> F[Abnormal score and fixed threshold]
+    L --> M[Match axial planes using DICOM coordinates]
+    X[Same-study axial T2 series] --> M
+    F --> R[Route flagged levels]
+    M --> R
+    R --> A[Axial segmentation, ROI detection, and geometric grade]
+    A --> D[Per-level fused decision]
+    F --> D
+```
 
-The first model requires a whole-lumbar bounding box for every training image.
-The LSS foraminal-stenosis boxes cannot automatically serve as whole-lumbar
-labels. If whole-lumbar boxes are unavailable, create them manually, derive a
-coarse box from trustworthy anatomical masks, or skip Stage 1 and use a
-deterministic anatomical crop.
+The paired runner supports axial grading at **L3–L4, L4–L5, L5–S1**.
+Sagittal output covers five levels when visible. Missing axial results remain
+indeterminate. The Mendeley runner is a dataset adapter, not a universal
+DICOM-folder reader.
 
-Do not train Stage 2 from Stage 1 predictions at first. Train it using the
-ground-truth lumbar box so its errors remain independent of Stage 1 errors.
+## Quick start
 
-Input-size decision
+Python 3.14.4 was used for the current evaluation. Install a suitable PyTorch
+build and the [pinned dependencies](requirements-inference.txt), then run:
 
-Start the localizer at 128×128.
+```bash
+python -m scripts.check_pipeline_artifacts
+python -m scripts.run_paired_sagittal_axial \
+  --patient-id 1 --device cuda --serial \
+  --output outputs/my_paired_run/patient_0001
+```
 
-Treat 64×64 as an ablation experiment, not an assumption.
+Selected checkpoints, calibration, and evaluation records are committed for
+teammate use. Obtain raw datasets separately. The command above requires
+`data/raw/mendeley_lumbar/MRI_Data.zip`. The guide also provides a synthetic
+smoke test that needs no MRI data.
 
-Keep 128×128 only if lumbar-localization recall and crop coverage remain
-acceptable on the validation set.
+## Measured results and limits
 
-Stage 2 starts at 320×320 because its targets are smaller.
+| Evaluation | Result | Interpretation |
+|---|---|---|
+| Sagittal attention VGG16, SPIDER training OOF | AP 0.912 | Patient folds; used during development |
+| Sagittal attention VGG16, reused SPIDER validation | AP 0.930 | 188 discs; exploratory |
+| Paired system, Mendeley images + LSMA labels | F1 0.709, precision 0.584, sensitivity 0.902 | 945 decided discs out of 1,030, two lower levels |
+| Same paired evaluation, including unresolved abnormal cases in recall denominator | Sensitivity 0.847 | 431 detected out of all 509 labelled abnormal discs |
+| Five-level RSNA axial matching | Top-three exact reference slice 0.855 | 7,390/8,639 eligible levels; matching, not diagnosis |
 
-The final choice must be supported by an experiment comparing at least
-64, 128, and optionally 192 pixels. Measure accuracy and latency together.
+The LSMA evaluation used 515 patients: `None` maps to normal and `Diffuse Bulge`/
+`Central Protrusion` to abnormal. There were 85 indeterminate discs. Fused AP is
+not reported because fusion emits categorical decisions. These exploratory,
+report-labelled results do not validate axial grades or establish independent
+clinical accuracy.
 
-Project layout
-
-lumbar-cascade/
-├── configs/
-│   └── default.json
-├── data/
-│   └── README.md
-├── scripts/
-│   ├── inspect_sample.py
-│   └── train_detector.py
-├── src/lumbar_cascade/
-│   ├── datasets.py
-│   ├── geometry.py
-│   ├── models.py
-│   └── pipeline.py
-└── tests/
-    └── test_geometry.py
-
-Coordinate spaces
-
-The code keeps these spaces separate:
-
-original: coordinates in the source MRI.
-
-stage1: coordinates in the letterboxed 128×128 image.
-
-crop: coordinates relative to the high-resolution lumbar crop.
-
-stage2: coordinates in the letterboxed 320×320 crop.
-
-Every resize returns metadata that can transform boxes in both directions.
-Never multiply a Stage 1 box by original_size / 128 unless the image was
-stretched without padding. Letterboxing requires both scale removal and padding
-removal.
-
-Manifest format
-
-Create data/manifest.json:
-
-[
-  {
-    "image": "data/images/patient_001_slice_01.png",
-    "patient_id": "patient_001",
-    "lumbar_box": [80, 40, 420, 470],
-    "regions": [
-      {"box": [130, 150, 180, 205], "label": 1},
-      {"box": [315, 150, 365, 205], "label": 1}
-    ]
-  }
-]
-
-All manifest boxes use absolute original-image xyxy coordinates:
-[x1, y1, x2, y2].
-
-Setup
-
-Python 3.11 or 3.12 is recommended because the scientific Python ecosystem may
-lag behind Python 3.14.
-
-cd lumbar-cascade
-python3.12 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -e ".[dev]"
-pytest
-
-First milestones
-
-Fill the manifest for 20 samples.
-
-Run the inspection script and verify every box visually.
-
-Pass all geometry tests.
-
-Split data by patient_id, never by individual slice.
-
-Train Stage 1 using whole-lumbar boxes.
-
-Train Stage 2 using ground-truth lumbar crops.
-
-Evaluate Stage 2 using predicted Stage 1 crops.
-
-Compare Stage 1 input sizes using the same patient split.
-
-Commands
-
-Inspect the coordinate pipeline:
-
-python scripts/inspect_sample.py \
-  --manifest data/manifest.json \
-  --index 0 \
-  --output runs/inspection.png
-
-Train the whole-lumbar localizer:
-
-python scripts/train_detector.py \
-  --manifest data/manifest.json \
-  --stage 1 \
-  --epochs 20 \
-  --output checkpoints/stage1.pt
-
-Train the detailed region detector from ground-truth lumbar crops:
-
-python scripts/train_detector.py \
-  --manifest data/manifest.json \
-  --stage 2 \
-  --epochs 30 \
-  --output checkpoints/stage2.pt
-
-What to study alongside the code
-
-Letterboxing: aspect-ratio-preserving resize, padding, affine coordinate
-transformations.
-
-Stage 1/2 models: CNN backbone, feature maps, region proposals, box regression.
-
-Evaluation: IoU, recall, precision, mAP, and error propagation in cascaded
-models.
+See the [versioned output inventory](outputs/README.md) and
+[axial source provenance](docs/AXIAL_SOURCE.md). Dataset files, local clinical
+cases, patient images, generated crops, and unrelated experiment artifacts
+remain local. Historical code and tracked files may still exist in Git; the
+active paired entry point is documented above.

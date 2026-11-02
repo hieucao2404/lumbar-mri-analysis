@@ -1,0 +1,8 @@
+{
+  "task": "normal versus bulging or herniation",
+  "aggregation": "bidirectional LSTM followed by slice attention",
+  "training_oof_ap": 0.892089624095911,
+  "reused_validation_ap": 0.9200876883835114,
+  "training_discs": 855,
+  "validation_discs": 188
+}

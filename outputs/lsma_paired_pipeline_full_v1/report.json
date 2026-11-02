@@ -1,0 +1,439 @@
+{
+  "task": "frozen sagittal-to-axial normal versus bulge or protrusion",
+  "patients": 515,
+  "evaluated_levels": [
+    "L4-L5",
+    "L5-S1"
+  ],
+  "label_mapping": {
+    "None": 0,
+    "Diffuse Bulge": 1,
+    "Central Protrusion": 1
+  },
+  "threshold": 0.23432311415672302,
+  "classifier": "outputs/spider_abnormal_vgg16_attention_guarded_v1/fixed.pt",
+  "localizer": "outputs/spider_disc_multitask_coord_v2/best_model.pt",
+  "calibration": "outputs/spider_abnormal_vgg16_attention_guarded_v1/calibration.json",
+  "archive": "data/raw/mendeley_lumbar/MRI_Data.zip",
+  "notes": "data/raw/LSMA-PQR Lumbar Spine Multi-view Annotations with/LSMA-PQR Lumbar Spine Multi-view Annotations with/structured_notes.csv",
+  "device": "cuda",
+  "execution": "persistent models; sequential flagged-level routing; no overlays",
+  "overall": {
+    "labelled_discs": 1030,
+    "abnormal": 509,
+    "normal": 521,
+    "source_labels": {
+      "Diffuse Bulge": 338,
+      "None": 521,
+      "Central Protrusion": 171
+    },
+    "decided_discs": 945,
+    "indeterminate_discs": 85,
+    "decision_coverage": 0.9174757281553398,
+    "indeterminate_abnormal": 31,
+    "indeterminate_normal": 54,
+    "final_on_decided_discs": {
+      "discs": 945,
+      "abnormal": 478,
+      "normal": 467,
+      "tp": 431,
+      "fp": 307,
+      "fn": 47,
+      "tn": 160,
+      "precision": 0.5840108401084011,
+      "sensitivity": 0.9016736401673641,
+      "specificity": 0.3426124197002141,
+      "f1": 0.7088815789473685,
+      "accuracy": 0.6253968253968254
+    },
+    "detected_abnormal_sensitivity_all_labelled_discs": 0.8467583497053045,
+    "sagittal_on_scored_discs": {
+      "discs": 986,
+      "abnormal": 496,
+      "normal": 490,
+      "tp": 467,
+      "fp": 396,
+      "fn": 29,
+      "tn": 94,
+      "precision": 0.541135573580533,
+      "sensitivity": 0.9415322580645161,
+      "specificity": 0.19183673469387755,
+      "f1": 0.6872700515084621,
+      "accuracy": 0.5689655172413793,
+      "ap": 0.653445231338071
+    },
+    "sagittal_on_decided_discs": {
+      "discs": 945,
+      "abnormal": 478,
+      "normal": 467,
+      "tp": 449,
+      "fp": 373,
+      "fn": 29,
+      "tn": 94,
+      "precision": 0.5462287104622872,
+      "sensitivity": 0.9393305439330544,
+      "specificity": 0.2012847965738758,
+      "f1": 0.6907692307692308,
+      "accuracy": 0.5746031746031746
+    },
+    "axial_effect_on_decided_discs": {
+      "false_positive_alerts_corrected": 66,
+      "true_positive_alerts_lost": 18
+    },
+    "status_counts": {
+      "axial_analyzed": 822,
+      "not_routed_to_axial": 123,
+      "patient_processing_failed": 44,
+      "no_confident_axial_match": 26,
+      "axial_analysis_failed": 15
+    },
+    "decision_reasons": {
+      "axial_grade_positive": 738,
+      "sagittal_screen_negative": 123,
+      "axial_grade_zero": 84,
+      "patient_processing_failed": 44,
+      "no_confident_axial_match": 26,
+      "axial_analysis_failed": 15
+    },
+    "final_ap": null
+  },
+  "by_level": {
+    "L4-L5": {
+      "labelled_discs": 515,
+      "abnormal": 306,
+      "normal": 209,
+      "source_labels": {
+        "Diffuse Bulge": 222,
+        "None": 209,
+        "Central Protrusion": 84
+      },
+      "decided_discs": 475,
+      "indeterminate_discs": 40,
+      "decision_coverage": 0.9223300970873787,
+      "indeterminate_abnormal": 19,
+      "indeterminate_normal": 21,
+      "final_on_decided_discs": {
+        "discs": 475,
+        "abnormal": 287,
+        "normal": 188,
+        "tp": 248,
+        "fp": 84,
+        "fn": 39,
+        "tn": 104,
+        "precision": 0.7469879518072289,
+        "sensitivity": 0.8641114982578397,
+        "specificity": 0.5531914893617021,
+        "f1": 0.8012924071082391,
+        "accuracy": 0.7410526315789474
+      },
+      "detected_abnormal_sensitivity_all_labelled_discs": 0.8104575163398693,
+      "sagittal_on_scored_discs": {
+        "discs": 493,
+        "abnormal": 297,
+        "normal": 196,
+        "tp": 272,
+        "fp": 124,
+        "fn": 25,
+        "tn": 72,
+        "precision": 0.6868686868686869,
+        "sensitivity": 0.9158249158249159,
+        "specificity": 0.3673469387755102,
+        "f1": 0.784992784992785,
+        "accuracy": 0.6977687626774848,
+        "ap": 0.8211429605468734
+      },
+      "sagittal_on_decided_discs": {
+        "discs": 475,
+        "abnormal": 287,
+        "normal": 188,
+        "tp": 262,
+        "fp": 116,
+        "fn": 25,
+        "tn": 72,
+        "precision": 0.6931216931216931,
+        "sensitivity": 0.9128919860627178,
+        "specificity": 0.3829787234042553,
+        "f1": 0.7879699248120301,
+        "accuracy": 0.7031578947368421
+      },
+      "axial_effect_on_decided_discs": {
+        "false_positive_alerts_corrected": 32,
+        "true_positive_alerts_lost": 14
+      },
+      "status_counts": {
+        "axial_analyzed": 378,
+        "not_routed_to_axial": 97,
+        "patient_processing_failed": 22,
+        "no_confident_axial_match": 10,
+        "axial_analysis_failed": 8
+      },
+      "decision_reasons": {
+        "axial_grade_positive": 332,
+        "sagittal_screen_negative": 97,
+        "axial_grade_zero": 46,
+        "patient_processing_failed": 22,
+        "no_confident_axial_match": 10,
+        "axial_analysis_failed": 8
+      },
+      "final_ap": null
+    },
+    "L5-S1": {
+      "labelled_discs": 515,
+      "abnormal": 203,
+      "normal": 312,
+      "source_labels": {
+        "None": 312,
+        "Central Protrusion": 87,
+        "Diffuse Bulge": 116
+      },
+      "decided_discs": 470,
+      "indeterminate_discs": 45,
+      "decision_coverage": 0.912621359223301,
+      "indeterminate_abnormal": 12,
+      "indeterminate_normal": 33,
+      "final_on_decided_discs": {
+        "discs": 470,
+        "abnormal": 191,
+        "normal": 279,
+        "tp": 183,
+        "fp": 223,
+        "fn": 8,
+        "tn": 56,
+        "precision": 0.45073891625615764,
+        "sensitivity": 0.9581151832460733,
+        "specificity": 0.2007168458781362,
+        "f1": 0.6130653266331658,
+        "accuracy": 0.5085106382978724
+      },
+      "detected_abnormal_sensitivity_all_labelled_discs": 0.9014778325123153,
+      "sagittal_on_scored_discs": {
+        "discs": 493,
+        "abnormal": 199,
+        "normal": 294,
+        "tp": 195,
+        "fp": 272,
+        "fn": 4,
+        "tn": 22,
+        "precision": 0.41755888650963596,
+        "sensitivity": 0.9798994974874372,
+        "specificity": 0.07482993197278912,
+        "f1": 0.5855855855855856,
+        "accuracy": 0.44016227180527384,
+        "ap": 0.5420917469618882
+      },
+      "sagittal_on_decided_discs": {
+        "discs": 470,
+        "abnormal": 191,
+        "normal": 279,
+        "tp": 187,
+        "fp": 257,
+        "fn": 4,
+        "tn": 22,
+        "precision": 0.42117117117117114,
+        "sensitivity": 0.9790575916230366,
+        "specificity": 0.07885304659498207,
+        "f1": 0.5889763779527559,
+        "accuracy": 0.44468085106382976
+      },
+      "axial_effect_on_decided_discs": {
+        "false_positive_alerts_corrected": 34,
+        "true_positive_alerts_lost": 4
+      },
+      "status_counts": {
+        "axial_analyzed": 444,
+        "patient_processing_failed": 22,
+        "no_confident_axial_match": 16,
+        "axial_analysis_failed": 7,
+        "not_routed_to_axial": 26
+      },
+      "decision_reasons": {
+        "axial_grade_positive": 406,
+        "axial_grade_zero": 38,
+        "patient_processing_failed": 22,
+        "no_confident_axial_match": 16,
+        "axial_analysis_failed": 7,
+        "sagittal_screen_negative": 26
+      },
+      "final_ap": null
+    }
+  },
+  "none_vs_diffuse_bulge_subset": {
+    "labelled_discs": 859,
+    "abnormal": 338,
+    "normal": 521,
+    "source_labels": {
+      "Diffuse Bulge": 338,
+      "None": 521
+    },
+    "decided_discs": 777,
+    "indeterminate_discs": 82,
+    "decision_coverage": 0.9045401629802096,
+    "indeterminate_abnormal": 28,
+    "indeterminate_normal": 54,
+    "final_on_decided_discs": {
+      "discs": 777,
+      "abnormal": 310,
+      "normal": 467,
+      "tp": 277,
+      "fp": 307,
+      "fn": 33,
+      "tn": 160,
+      "precision": 0.4743150684931507,
+      "sensitivity": 0.8935483870967742,
+      "specificity": 0.3426124197002141,
+      "f1": 0.6196868008948546,
+      "accuracy": 0.5624195624195624
+    },
+    "detected_abnormal_sensitivity_all_labelled_discs": 0.8195266272189349,
+    "sagittal_on_scored_discs": {
+      "discs": 815,
+      "abnormal": 325,
+      "normal": 490,
+      "tp": 305,
+      "fp": 396,
+      "fn": 20,
+      "tn": 94,
+      "precision": 0.43509272467902993,
+      "sensitivity": 0.9384615384615385,
+      "specificity": 0.19183673469387755,
+      "f1": 0.594541910331384,
+      "accuracy": 0.48957055214723927,
+      "ap": 0.5311257431152006
+    },
+    "sagittal_on_decided_discs": {
+      "discs": 777,
+      "abnormal": 310,
+      "normal": 467,
+      "tp": 290,
+      "fp": 373,
+      "fn": 20,
+      "tn": 94,
+      "precision": 0.4374057315233786,
+      "sensitivity": 0.9354838709677419,
+      "specificity": 0.2012847965738758,
+      "f1": 0.5960945529290853,
+      "accuracy": 0.4942084942084942
+    },
+    "axial_effect_on_decided_discs": {
+      "false_positive_alerts_corrected": 66,
+      "true_positive_alerts_lost": 13
+    },
+    "status_counts": {
+      "axial_analyzed": 663,
+      "not_routed_to_axial": 114,
+      "patient_processing_failed": 44,
+      "no_confident_axial_match": 23,
+      "axial_analysis_failed": 15
+    },
+    "decision_reasons": {
+      "axial_grade_positive": 584,
+      "sagittal_screen_negative": 114,
+      "axial_grade_zero": 79,
+      "patient_processing_failed": 44,
+      "no_confident_axial_match": 23,
+      "axial_analysis_failed": 15
+    },
+    "final_ap": null
+  },
+  "patient_failures": [
+    {
+      "patient_id": 20,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 27,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 42,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 55,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 65,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 73,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 77,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 107,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 159,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 161,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 198,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 230,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 233,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 243,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 246,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 272,
+      "error": "need at least one array to stack"
+    },
+    {
+      "patient_id": 403,
+      "error": "need at least one array to stack"
+    },
+    {
+      "patient_id": 413,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 459,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 487,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 519,
+      "error": "Duplicate or unordered sagittal slice positions"
+    },
+    {
+      "patient_id": 555,
+      "error": "Duplicate or unordered sagittal slice positions"
+    }
+  ],
+  "elapsed_seconds": 157.73,
+  "limitations": [
+    "Report-derived labels have not been independently adjudicated for this evaluation.",
+    "Central Protrusion is mapped to abnormal; the historical None/Diffuse Bulge subset is also reported.",
+    "Only L4-L5 and L5-S1 have disc-type reference labels in this CSV.",
+    "Indeterminate cases are excluded from decided-disc F1 and reported as failures with full-cohort sensitivity.",
+    "The final decision has no defined continuous score, so fused AP is not calculated.",
+    "Axial geometric grades 0-3 are not validated against matching expert grades by this experiment.",
+    "Axial training scripts name AISSLab; checkpoint training provenance is not independently verified.",
+    "This external cohort has been inspected in earlier experiments; the evaluation is exploratory."
+  ]
+}

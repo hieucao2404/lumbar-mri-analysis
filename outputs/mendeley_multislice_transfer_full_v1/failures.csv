@@ -1,0 +1,25 @@
+patient_id,stage,error
+20,geometry,Duplicate or unordered sagittal slice positions
+27,geometry,Duplicate or unordered sagittal slice positions
+42,geometry,Duplicate or unordered sagittal slice positions
+55,geometry,Duplicate or unordered sagittal slice positions
+65,geometry,Duplicate or unordered sagittal slice positions
+73,geometry,Duplicate or unordered sagittal slice positions
+77,geometry,Duplicate or unordered sagittal slice positions
+107,geometry,Duplicate or unordered sagittal slice positions
+159,geometry,Duplicate or unordered sagittal slice positions
+161,geometry,Duplicate or unordered sagittal slice positions
+198,geometry,Duplicate or unordered sagittal slice positions
+230,geometry,Duplicate or unordered sagittal slice positions
+233,geometry,Duplicate or unordered sagittal slice positions
+243,geometry,Duplicate or unordered sagittal slice positions
+246,geometry,Duplicate or unordered sagittal slice positions
+272,L4-L5,No MRI-only predicted disc box
+272,L5-S1,No MRI-only predicted disc box
+403,L4-L5,No MRI-only predicted disc box
+403,L5-S1,No MRI-only predicted disc box
+413,geometry,Duplicate or unordered sagittal slice positions
+459,geometry,Duplicate or unordered sagittal slice positions
+487,geometry,Duplicate or unordered sagittal slice positions
+519,geometry,Duplicate or unordered sagittal slice positions
+555,geometry,Duplicate or unordered sagittal slice positions

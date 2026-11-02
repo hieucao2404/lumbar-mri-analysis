@@ -1,0 +1,153 @@
+{
+  "task": "five-level sagittal-to-axial instance matching",
+  "reference": "RSNA left/right subarticular axial coordinate instances",
+  "selection_uses_reference_labels": false,
+  "eligible_studies": 1805,
+  "sampled_studies": 1805,
+  "seed": 20261102,
+  "device": "cuda",
+  "sagittal_abnormal_threshold": 0.23432311415672302,
+  "overall": {
+    "expected_levels": 9025,
+    "localized_levels": 8995,
+    "matched_levels": 8628,
+    "reference_in_selected_series": 8639,
+    "top1_exact_count": 5033,
+    "top3_exact_count": 7390,
+    "top3_adjacent_count": 7831,
+    "top1_exact_rate": 0.5825905776131497,
+    "top3_exact_rate": 0.8554230813751592,
+    "top3_adjacent_rate": 0.9064706563259637,
+    "top3_exact_full_cohort_rate": 0.8188365650969529,
+    "status_counts": {
+      "matched": 8628,
+      "no_axial_match": 367,
+      "study_failed": 20,
+      "missing_disc_box": 10
+    }
+  },
+  "by_level": {
+    "L1-L2": {
+      "expected_levels": 1805,
+      "localized_levels": 1799,
+      "matched_levels": 1732,
+      "reference_in_selected_series": 1759,
+      "top1_exact_count": 1139,
+      "top3_exact_count": 1530,
+      "top3_adjacent_count": 1579,
+      "top1_exact_rate": 0.6475270039795338,
+      "top3_exact_rate": 0.869812393405344,
+      "top3_adjacent_rate": 0.8976691301876066,
+      "top3_exact_full_cohort_rate": 0.8476454293628809,
+      "status_counts": {
+        "matched": 1732,
+        "no_axial_match": 67,
+        "study_failed": 4,
+        "missing_disc_box": 2
+      }
+    },
+    "L2-L3": {
+      "expected_levels": 1805,
+      "localized_levels": 1799,
+      "matched_levels": 1763,
+      "reference_in_selected_series": 1762,
+      "top1_exact_count": 1152,
+      "top3_exact_count": 1565,
+      "top3_adjacent_count": 1605,
+      "top1_exact_rate": 0.6538024971623155,
+      "top3_exact_rate": 0.8881952326901249,
+      "top3_adjacent_rate": 0.9108967082860386,
+      "top3_exact_full_cohort_rate": 0.8670360110803325,
+      "status_counts": {
+        "matched": 1763,
+        "no_axial_match": 36,
+        "study_failed": 4,
+        "missing_disc_box": 2
+      }
+    },
+    "L3-L4": {
+      "expected_levels": 1805,
+      "localized_levels": 1799,
+      "matched_levels": 1773,
+      "reference_in_selected_series": 1759,
+      "top1_exact_count": 1101,
+      "top3_exact_count": 1579,
+      "top3_adjacent_count": 1623,
+      "top1_exact_rate": 0.625923820352473,
+      "top3_exact_rate": 0.8976691301876066,
+      "top3_adjacent_rate": 0.9226833428084139,
+      "top3_exact_full_cohort_rate": 0.874792243767313,
+      "status_counts": {
+        "matched": 1773,
+        "no_axial_match": 26,
+        "study_failed": 4,
+        "missing_disc_box": 2
+      }
+    },
+    "L4-L5": {
+      "expected_levels": 1805,
+      "localized_levels": 1799,
+      "matched_levels": 1692,
+      "reference_in_selected_series": 1684,
+      "top1_exact_count": 989,
+      "top3_exact_count": 1471,
+      "top3_adjacent_count": 1552,
+      "top1_exact_rate": 0.58729216152019,
+      "top3_exact_rate": 0.8735154394299287,
+      "top3_adjacent_rate": 0.9216152019002375,
+      "top3_exact_full_cohort_rate": 0.8149584487534626,
+      "status_counts": {
+        "matched": 1692,
+        "no_axial_match": 107,
+        "study_failed": 4,
+        "missing_disc_box": 2
+      }
+    },
+    "L5-S1": {
+      "expected_levels": 1805,
+      "localized_levels": 1799,
+      "matched_levels": 1668,
+      "reference_in_selected_series": 1675,
+      "top1_exact_count": 652,
+      "top3_exact_count": 1245,
+      "top3_adjacent_count": 1472,
+      "top1_exact_rate": 0.38925373134328356,
+      "top3_exact_rate": 0.7432835820895523,
+      "top3_adjacent_rate": 0.8788059701492538,
+      "top3_exact_full_cohort_rate": 0.6897506925207756,
+      "status_counts": {
+        "matched": 1668,
+        "no_axial_match": 131,
+        "study_failed": 4,
+        "missing_disc_box": 2
+      }
+    }
+  },
+  "failed_studies": [
+    {
+      "study_id": "3442533162",
+      "sagittal_series_id": "978923687",
+      "axial_series_id": "1627209042",
+      "error": "Target disc center outside band: [132, 150, 142, 158], (133, 154)"
+    },
+    {
+      "study_id": "3010856283",
+      "sagittal_series_id": "3908286977",
+      "axial_series_id": "1092542919",
+      "error": "Target disc center outside band: [156, 177, 164, 187], (164, 182)"
+    },
+    {
+      "study_id": "764432065",
+      "sagittal_series_id": "202505792",
+      "axial_series_id": "966115666",
+      "error": "Target disc center outside band: [161, 187, 182, 197], (172, 192)"
+    },
+    {
+      "study_id": "2028028580",
+      "sagittal_series_id": "2710529906",
+      "axial_series_id": "3084473175",
+      "error": "Target disc center outside band: [195, 369, 223, 391], (353, 380)"
+    }
+  ],
+  "caveat": "RSNA stenosis labels cannot measure bulge/herniation classification F1."
+}

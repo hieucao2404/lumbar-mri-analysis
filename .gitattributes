@@ -1,0 +1,8 @@
+# Keep shared source and evaluation tables consistent across Linux and Windows.
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.pt -text
+*.pth -text
