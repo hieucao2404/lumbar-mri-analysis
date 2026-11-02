@@ -1,8 +1,28 @@
+# Python environments, caches, and build products
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+/.pytest_cache/
+/.mypy_cache/
+/.ruff_cache/
+/.coverage
+/htmlcov/
+/build/
+/dist/
+*.egg-info/
 
-data/raw/
+# Local configuration and logs
+/.env
+/.env.*
+!/.env.example
+*.log
 
-data/raw/
+# Local MRI datasets and generated crops
+/data/raw/
+/data/processed/
 
-data/raw/
-
-artifacts/
+# Training runs, checkpoints, predictions, and figures
+/artifacts/
+/outputs/
+/runs/

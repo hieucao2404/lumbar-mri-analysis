@@ -1,0 +1,32 @@
+{
+  "study_id": "31",
+  "sagittal_series_name": "31_t2",
+  "selected_sagittal_slice": 7,
+  "discs": [
+    {
+      "level": "L1-L2",
+      "stack_path": "data/processed/spider_bulge_herniation_mri_only_guarded_v2/stacks/validation/31_t2_ivd5.npy",
+      "disc_box_xyxy_original": [193, 147, 241, 169]
+    },
+    {
+      "level": "L2-L3",
+      "stack_path": "data/processed/spider_bulge_herniation_mri_only_guarded_v2/stacks/validation/31_t2_ivd4.npy",
+      "disc_box_xyxy_original": [177, 201, 226, 211]
+    },
+    {
+      "level": "L3-L4",
+      "stack_path": "data/processed/spider_bulge_herniation_mri_only_guarded_v2/stacks/validation/31_t2_ivd3.npy",
+      "disc_box_xyxy_original": [175, 245, 232, 269]
+    },
+    {
+      "level": "L4-L5",
+      "stack_path": "data/processed/spider_bulge_herniation_mri_only_guarded_v2/stacks/validation/31_t2_ivd2.npy",
+      "disc_box_xyxy_original": [180, 298, 238, 326]
+    },
+    {
+      "level": "L5-S1",
+      "stack_path": "data/processed/spider_bulge_herniation_mri_only_guarded_v2/stacks/validation/31_t2_ivd1.npy",
+      "disc_box_xyxy_original": [202, 336, 256, 372]
+    }
+  ]
+}

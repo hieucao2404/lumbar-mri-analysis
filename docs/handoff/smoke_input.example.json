@@ -1,0 +1,11 @@
+{
+  "study_id": "smoke-test-only",
+  "sagittal_series_name": "synthetic-blank-stack",
+  "selected_sagittal_slice": null,
+  "discs": [
+    {
+      "level": "L4-L5",
+      "stack_path": "outputs/handoff_smoke/blank.npy"
+    }
+  ]
+}
