@@ -1,0 +1,123 @@
+{
+  "dataset": "Original Mendeley 515-patient multi-slice sagittal T2",
+  "label_source": "LSMA-PQR structured reports for the same patients",
+  "task": "None versus Diffuse Bulge at L4-L5 and L5-S1",
+  "patient_ids_considered": 515,
+  "patients_scored": 439,
+  "counters": {
+    "eligible_discs": 819,
+    "excluded_label:Central Protrusion": 63,
+    "no_eligible_levels": 54,
+    "geometry_failed_patients": 20,
+    "multiple_t2_series": 46,
+    "missing_disc_boxes": 4
+  },
+  "models": {
+    "attention": {
+      "checkpoint": "outputs/spider_abnormal_vgg16_attention_guarded_v1/fixed.pt",
+      "threshold": 0.23432311415672302,
+      "overall": {
+        "discs": 815,
+        "abnormal": 325,
+        "normal": 490,
+        "ap": 0.5312739372140978,
+        "tp": 305,
+        "fp": 396,
+        "fn": 20,
+        "tn": 94,
+        "sensitivity": 0.9384615384615385,
+        "precision": 0.43509272467902993,
+        "specificity": 0.19183673469387755
+      },
+      "by_level": {
+        "L4-L5": {
+          "discs": 409,
+          "abnormal": 213,
+          "normal": 196,
+          "ap": 0.7557835776514075,
+          "tp": 195,
+          "fp": 124,
+          "fn": 18,
+          "tn": 72,
+          "sensitivity": 0.9154929577464789,
+          "precision": 0.6112852664576802,
+          "specificity": 0.3673469387755102
+        },
+        "L5-S1": {
+          "discs": 406,
+          "abnormal": 112,
+          "normal": 294,
+          "ap": 0.38752008268058236,
+          "tp": 110,
+          "fp": 272,
+          "fn": 2,
+          "tn": 22,
+          "sensitivity": 0.9821428571428571,
+          "precision": 0.2879581151832461,
+          "specificity": 0.07482993197278912
+        }
+      }
+    },
+    "lstm_attention": {
+      "checkpoint": "outputs/spider_abnormal_vgg16_lstm_attention_guarded_v1/fixed.pt",
+      "threshold": 0.053314208984375,
+      "overall": {
+        "discs": 815,
+        "abnormal": 325,
+        "normal": 490,
+        "ap": 0.6127243778310135,
+        "tp": 317,
+        "fp": 435,
+        "fn": 8,
+        "tn": 55,
+        "sensitivity": 0.9753846153846154,
+        "precision": 0.42154255319148937,
+        "specificity": 0.11224489795918367
+      },
+      "by_level": {
+        "L4-L5": {
+          "discs": 409,
+          "abnormal": 213,
+          "normal": 196,
+          "ap": 0.7570182114448655,
+          "tp": 207,
+          "fp": 158,
+          "fn": 6,
+          "tn": 38,
+          "sensitivity": 0.971830985915493,
+          "precision": 0.5671232876712329,
+          "specificity": 0.19387755102040816
+        },
+        "L5-S1": {
+          "discs": 406,
+          "abnormal": 112,
+          "normal": 294,
+          "ap": 0.4660998513381025,
+          "tp": 110,
+          "fp": 277,
+          "fn": 2,
+          "tn": 17,
+          "sensitivity": 0.9821428571428571,
+          "precision": 0.2842377260981912,
+          "specificity": 0.05782312925170068
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Report-derived labels are not SPIDER expert bulging/herniation grades.",
+    "Central Protrusion and ambiguous labels are excluded from AP.",
+    "Missing localization boxes are counted separately and excluded from AP.",
+    "This cohort was previously tested using LSMA-PQR single-slice images.",
+    "No checkpoint or threshold was fitted on this external dataset."
+  ],
+  "source_label_counts": {
+    "Diffuse Bulge": 338,
+    "None": 521,
+    "Central Protrusion": 171
+  },
+  "total_eligible_discs": 859,
+  "scored_eligible_discs": 815,
+  "unscored_eligible_discs": 44,
+  "eligible_disc_coverage": 0.9487776484284052
+}

@@ -1,0 +1,40 @@
+{
+  "task": "flag possible bulging or herniation for axial review",
+  "target_sensitivity": 0.91,
+  "threshold": 0.26430627703666687,
+  "calibration_source": "outputs/spider_abnormal_disc_cnn_oof_v1/oof_predictions.csv",
+  "calibration": {
+    "discs": 850,
+    "abnormal_discs": 546,
+    "normal_discs": 304,
+    "threshold": 0.26430627703666687,
+    "tp": 497,
+    "fp": 190,
+    "fn": 49,
+    "tn": 114,
+    "sensitivity": 0.9102564102564102,
+    "precision": 0.7234352256186317,
+    "specificity": 0.375,
+    "disc_ap": 0.7985338144626377,
+    "herniation_subset_flagged": 59,
+    "herniation_subset_total": 60
+  },
+  "validation_source": "outputs/spider_abnormal_disc_cnn_fixed_v1/validation_predictions.csv",
+  "validation": {
+    "discs": 185,
+    "abnormal_discs": 140,
+    "normal_discs": 45,
+    "threshold": 0.26430627703666687,
+    "tp": 126,
+    "fp": 28,
+    "fn": 14,
+    "tn": 17,
+    "sensitivity": 0.9,
+    "precision": 0.8181818181818182,
+    "specificity": 0.37777777777777777,
+    "disc_ap": 0.9179141028288578,
+    "herniation_subset_flagged": 9,
+    "herniation_subset_total": 9
+  },
+  "caveat": "Validation has been reused; this is exploratory, not an independent performance claim."
+}

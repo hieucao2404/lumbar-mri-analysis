@@ -1,0 +1,10 @@
+{
+  "mode": "full",
+  "epochs": 15,
+  "seed": 42,
+  "discs": 185,
+  "abnormal_discs": 140,
+  "abnormal_disc_ap": 0.9179141028288578,
+  "sampler": "50% normal and 50% abnormal, patient balanced within each class",
+  "note": "SPIDER validation has been reused; exploratory only."
+}

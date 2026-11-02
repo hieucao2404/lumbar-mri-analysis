@@ -1,0 +1,35 @@
+{
+  "schema_version": "paired-artifacts/v1",
+  "artifacts": [
+    {
+      "role": "localizer",
+      "path": "outputs/spider_disc_multitask_coord_v2/best_model.pt",
+      "bytes": 5925077,
+      "sha256": "a1789ae9c0d72b53db48bb3e8d9d47c96bfccf79b00314ecf12c174b05ef10cd"
+    },
+    {
+      "role": "sagittal_classifier",
+      "path": "outputs/spider_abnormal_vgg16_attention_guarded_v1/fixed.pt",
+      "bytes": 59141475,
+      "sha256": "03fd768aa7b5a7fb3fe21126e3d1bfcb09d89fbaeb85a93820e8c3ac14a6304a"
+    },
+    {
+      "role": "calibration",
+      "path": "outputs/spider_abnormal_vgg16_attention_guarded_v1/calibration.json",
+      "bytes": 1254,
+      "sha256": "855a3aaf7cbf0b8a3604bd92627037fcf9249dd4e5ee22139317820a1110ff29"
+    },
+    {
+      "role": "axial_segmentation",
+      "path": "MRI_Lumbar/cnn_segmentation/models/checkpoints_4cls/lenet_unet_best.pt",
+      "bytes": 455991,
+      "sha256": "0c70a6d1fffe2046fed6ba8f78e3b78d437cde0e5156f0c755c085fcf94ffe02"
+    },
+    {
+      "role": "axial_roi_detector",
+      "path": "MRI_Lumbar/cnn/cnn_roi_detection/outputs_256/best.pt",
+      "bytes": 143293,
+      "sha256": "bbab6d4559d3990a8ba99e6c1d792b0574658ea5d332fdd27d82ff4b98d0841a"
+    }
+  ]
+}

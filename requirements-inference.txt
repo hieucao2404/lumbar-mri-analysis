@@ -1,0 +1,13 @@
+# Versions used for the paired CUDA evaluation. Install the appropriate
+# PyTorch CPU/CUDA build first; local suffixes such as +cu128 satisfy these pins.
+torch==2.11.0
+torchvision==0.26.0
+numpy==2.5.2
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+SimpleITK==2.5.6
+pydicom==3.0.2
+Pillow==12.3.0
+matplotlib==3.11.2
+opencv-python-headless==5.0.0.93

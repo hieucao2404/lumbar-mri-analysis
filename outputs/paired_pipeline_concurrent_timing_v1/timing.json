@@ -1,0 +1,416 @@
+{
+  "method": "fresh process, wall time including model loading, DICOM reading, inference, and overlay rendering; three repetitions; matched serial/concurrent outputs",
+  "rows": [
+    {
+      "rep": 1,
+      "patient": 290,
+      "mode": "serial",
+      "seconds": 4.774,
+      "flagged_lower": [],
+      "axial_slices": 0
+    },
+    {
+      "rep": 1,
+      "patient": 290,
+      "mode": "concurrent",
+      "seconds": 4.516,
+      "flagged_lower": [],
+      "axial_slices": 0
+    },
+    {
+      "rep": 1,
+      "patient": 2,
+      "mode": "serial",
+      "seconds": 5.074,
+      "flagged_lower": [
+        "L5-S1"
+      ],
+      "axial_slices": 3
+    },
+    {
+      "rep": 1,
+      "patient": 2,
+      "mode": "concurrent",
+      "seconds": 5.098,
+      "flagged_lower": [
+        "L5-S1"
+      ],
+      "axial_slices": 3
+    },
+    {
+      "rep": 1,
+      "patient": 8,
+      "mode": "serial",
+      "seconds": 5.878,
+      "flagged_lower": [
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 6
+    },
+    {
+      "rep": 1,
+      "patient": 8,
+      "mode": "concurrent",
+      "seconds": 5.74,
+      "flagged_lower": [
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 6
+    },
+    {
+      "rep": 1,
+      "patient": 1,
+      "mode": "serial",
+      "seconds": 6.353,
+      "flagged_lower": [
+        "L3-L4",
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 1,
+      "patient": 1,
+      "mode": "concurrent",
+      "seconds": 6.29,
+      "flagged_lower": [
+        "L3-L4",
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 2,
+      "patient": 290,
+      "mode": "concurrent",
+      "seconds": 4.422,
+      "flagged_lower": [],
+      "axial_slices": 0
+    },
+    {
+      "rep": 2,
+      "patient": 290,
+      "mode": "serial",
+      "seconds": 4.51,
+      "flagged_lower": [],
+      "axial_slices": 0
+    },
+    {
+      "rep": 2,
+      "patient": 2,
+      "mode": "concurrent",
+      "seconds": 5.124,
+      "flagged_lower": [
+        "L5-S1"
+      ],
+      "axial_slices": 3
+    },
+    {
+      "rep": 2,
+      "patient": 2,
+      "mode": "serial",
+      "seconds": 5.185,
+      "flagged_lower": [
+        "L5-S1"
+      ],
+      "axial_slices": 3
+    },
+    {
+      "rep": 2,
+      "patient": 8,
+      "mode": "concurrent",
+      "seconds": 5.872,
+      "flagged_lower": [
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 6
+    },
+    {
+      "rep": 2,
+      "patient": 8,
+      "mode": "serial",
+      "seconds": 5.649,
+      "flagged_lower": [
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 6
+    },
+    {
+      "rep": 2,
+      "patient": 1,
+      "mode": "concurrent",
+      "seconds": 6.094,
+      "flagged_lower": [
+        "L3-L4",
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 2,
+      "patient": 1,
+      "mode": "serial",
+      "seconds": 6.267,
+      "flagged_lower": [
+        "L3-L4",
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 3,
+      "patient": 290,
+      "mode": "serial",
+      "seconds": 4.444,
+      "flagged_lower": [],
+      "axial_slices": 0
+    },
+    {
+      "rep": 3,
+      "patient": 290,
+      "mode": "concurrent",
+      "seconds": 4.305,
+      "flagged_lower": [],
+      "axial_slices": 0
+    },
+    {
+      "rep": 3,
+      "patient": 2,
+      "mode": "serial",
+      "seconds": 5.042,
+      "flagged_lower": [
+        "L5-S1"
+      ],
+      "axial_slices": 3
+    },
+    {
+      "rep": 3,
+      "patient": 2,
+      "mode": "concurrent",
+      "seconds": 4.929,
+      "flagged_lower": [
+        "L5-S1"
+      ],
+      "axial_slices": 3
+    },
+    {
+      "rep": 3,
+      "patient": 8,
+      "mode": "serial",
+      "seconds": 5.693,
+      "flagged_lower": [
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 6
+    },
+    {
+      "rep": 3,
+      "patient": 8,
+      "mode": "concurrent",
+      "seconds": 5.525,
+      "flagged_lower": [
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 6
+    },
+    {
+      "rep": 3,
+      "patient": 1,
+      "mode": "serial",
+      "seconds": 6.158,
+      "flagged_lower": [
+        "L3-L4",
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 3,
+      "patient": 1,
+      "mode": "concurrent",
+      "seconds": 6.151,
+      "flagged_lower": [
+        "L3-L4",
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 1,
+      "patient": 290,
+      "mode": "all_levels",
+      "seconds": 5.077,
+      "flagged_lower": [],
+      "axial_slices": 3
+    },
+    {
+      "rep": 1,
+      "patient": 2,
+      "mode": "all_levels",
+      "seconds": 6.273,
+      "flagged_lower": [
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 1,
+      "patient": 8,
+      "mode": "all_levels",
+      "seconds": 6.324,
+      "flagged_lower": [
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 1,
+      "patient": 1,
+      "mode": "all_levels",
+      "seconds": 6.557,
+      "flagged_lower": [
+        "L3-L4",
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 2,
+      "patient": 290,
+      "mode": "all_levels",
+      "seconds": 4.782,
+      "flagged_lower": [],
+      "axial_slices": 3
+    },
+    {
+      "rep": 2,
+      "patient": 2,
+      "mode": "all_levels",
+      "seconds": 6.605,
+      "flagged_lower": [
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 2,
+      "patient": 8,
+      "mode": "all_levels",
+      "seconds": 6.501,
+      "flagged_lower": [
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 2,
+      "patient": 1,
+      "mode": "all_levels",
+      "seconds": 6.485,
+      "flagged_lower": [
+        "L3-L4",
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 3,
+      "patient": 290,
+      "mode": "all_levels",
+      "seconds": 4.88,
+      "flagged_lower": [],
+      "axial_slices": 3
+    },
+    {
+      "rep": 3,
+      "patient": 2,
+      "mode": "all_levels",
+      "seconds": 6.401,
+      "flagged_lower": [
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 3,
+      "patient": 8,
+      "mode": "all_levels",
+      "seconds": 6.303,
+      "flagged_lower": [
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    },
+    {
+      "rep": 3,
+      "patient": 1,
+      "mode": "all_levels",
+      "seconds": 6.344,
+      "flagged_lower": [
+        "L3-L4",
+        "L4-L5",
+        "L5-S1"
+      ],
+      "axial_slices": 9
+    }
+  ],
+  "summary": {
+    "290": {
+      "routed_levels": 0,
+      "axial_slices": 0,
+      "serial_mean_seconds": 4.576,
+      "concurrent_mean_seconds": 4.414,
+      "saving_seconds": 0.162,
+      "saving_percent": 3.5,
+      "all_levels_mean_seconds": 4.913,
+      "all_levels_axial_slices": 3
+    },
+    "2": {
+      "routed_levels": 1,
+      "axial_slices": 3,
+      "serial_mean_seconds": 5.1,
+      "concurrent_mean_seconds": 5.05,
+      "saving_seconds": 0.05,
+      "saving_percent": 1.0,
+      "all_levels_mean_seconds": 6.426,
+      "all_levels_axial_slices": 9
+    },
+    "8": {
+      "routed_levels": 2,
+      "axial_slices": 6,
+      "serial_mean_seconds": 5.74,
+      "concurrent_mean_seconds": 5.712,
+      "saving_seconds": 0.028,
+      "saving_percent": 0.5,
+      "all_levels_mean_seconds": 6.376,
+      "all_levels_axial_slices": 9
+    },
+    "1": {
+      "routed_levels": 3,
+      "axial_slices": 9,
+      "serial_mean_seconds": 6.259,
+      "concurrent_mean_seconds": 6.178,
+      "saving_seconds": 0.081,
+      "saving_percent": 1.3,
+      "all_levels_mean_seconds": 6.462,
+      "all_levels_axial_slices": 9
+    }
+  }
+}

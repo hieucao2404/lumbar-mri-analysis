@@ -1,0 +1,8 @@
+{
+  "task": "normal versus bulging or herniation",
+  "aggregation": "learned attention over eight slice logits",
+  "training_oof_ap": 0.9122722736207484,
+  "reused_validation_ap": 0.9304338101198861,
+  "training_discs": 855,
+  "validation_discs": 188
+}
